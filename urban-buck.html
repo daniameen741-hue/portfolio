@@ -348,6 +348,23 @@
       height: 100%;
       object-fit: contain;
     }
+    .banner-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      width: 100%;
+      height: 100%;
+    }
+    .banner-gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .banner-gallery img:first-child { border-radius: 16px 0 0 0; }
+    .banner-gallery img:nth-child(2) { border-radius: 0 16px 0 0; }
+    .banner-gallery img:nth-child(3) { border-radius: 0 0 0 16px; }
+    .banner-gallery img:nth-child(4) { border-radius: 0 0 16px 0; }
     .project-detail-body { padding: 28px; }
     .project-detail-header {
       display: flex;
@@ -662,18 +679,26 @@
         </div>
 
         <div class="project-detail-card" data-delay="100">
-          <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Website Banners"></div>
+          <div class="project-detail-image" style="padding:0;">
+            <div class="banner-gallery">
+              <img src="mqw4l9r8-BIG-SPRING-DEAL-2.jpg" alt="Big Spring Deal Banner">
+              <img src="mqw4l9w1-Skywalker-5.jpg" alt="Skywalker Banner">
+              <img src="mqw4la01-Skywalker-8.jpg" alt="Skywalker Banner">
+              <img src="mqw4l9jg-6.jpg" alt="Amazon Store Banner">
+            </div>
+          </div>
           <div class="project-detail-body">
             <div class="project-detail-header">
               <span class="project-detail-client">Urban Buck</span>
               <span class="project-detail-role">Visual Designer</span>
             </div>
-            <h3 class="project-detail-title">Website &amp; Amazon Banners</h3>
-            <p class="project-detail-desc">High-converting e-commerce banner designs for Amazon storefront, website, and promotional campaigns — optimized for click-through and brand consistency.</p>
+            <h3 class="project-detail-title">Amazon Store Banners</h3>
+            <p class="project-detail-desc">High-converting Amazon storefront banners designed for seasonal promotions, product launches, and brand storytelling — optimized for click-through and conversion on the world's largest e-commerce platform.</p>
             <div class="project-detail-tags">
+              <span class="tag">Amazon Storefront</span>
               <span class="tag">E-Commerce Design</span>
-              <span class="tag">Amazon Store</span>
-              <span class="tag">Banner Design</span>
+              <span class="tag">Promotional Banners</span>
+              <span class="tag">Seasonal Campaigns</span>
             </div>
           </div>
         </div>
@@ -726,16 +751,7 @@
       </div>
     </div>
 
-    <!-- COMING SOON — MORE WORK -->
-    <div class="bento">
-      <div class="card placeholder-card" data-delay="50">
-        <div class="placeholder-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-        </div>
-        <h3>More Work Samples Coming Soon</h3>
-        <p>I'll be adding detailed case studies, campaign results, and behind-the-scenes content for each project.</p>
-      </div>
-    </div>
+
 
     <!-- CONTACT -->
     <div class="bento" id="contact">
