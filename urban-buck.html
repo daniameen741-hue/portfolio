@@ -349,25 +349,32 @@
       object-fit: contain;
     }
     .project-detail-body { padding: 28px; }
+    .project-detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
     .project-detail-client {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 6px;
+    }
+    .project-detail-role {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0.02em;
     }
     .project-detail-title {
       font-family: var(--font-display);
       font-size: 22px;
       font-weight: 600;
-      letter-spacing: -0.01em;
-      margin-bottom: 6px;
-    }
-    .project-detail-role {
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 10px;
     }
     .project-detail-desc {
       font-size: 15px;
@@ -556,7 +563,7 @@
 
   <!-- Navigation -->
   <nav>
-    <a href="index.html" class="nav-logo">
+    <a href="index.html" class="nav-logo" style="font-size: 10px; text-align: center;">
       <img src="mqvaeyw1-ChatGPT-Image-Jun-26_-2026_-11_10_06-PM.png" alt="D">
       Danish Ibn-E-Ameen
     </a>
@@ -623,9 +630,11 @@
         <div class="project-detail-card" data-delay="0">
           <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Influencer Collaboration Campaign"></div>
           <div class="project-detail-body">
-            <p class="project-detail-client">Urban Buck</p>
-            <p class="project-detail-title">Influencer Collaboration Campaign</p>
-            <p class="project-detail-role">Campaign Lead</p>
+            <div class="project-detail-header">
+              <span class="project-detail-client">Urban Buck</span>
+              <span class="project-detail-role">Campaign Lead</span>
+            </div>
+            <h3 class="project-detail-title">Influencer Collaboration Campaign</h3>
             <p class="project-detail-desc">Strategic influencer partnerships driving brand awareness and engagement across Instagram and TikTok. Managed end-to-end creator outreach, content briefs, and performance tracking.</p>
             <div class="project-detail-tags">
               <span class="tag">Influencer Marketing</span>
@@ -638,9 +647,11 @@
         <div class="project-detail-card" data-delay="50">
           <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Content Strategy"></div>
           <div class="project-detail-body">
-            <p class="project-detail-client">Urban Buck</p>
-            <p class="project-detail-title">Content Strategy</p>
-            <p class="project-detail-role">Content Strategist</p>
+            <div class="project-detail-header">
+              <span class="project-detail-client">Urban Buck</span>
+              <span class="project-detail-role">Content Strategist</span>
+            </div>
+            <h3 class="project-detail-title">Content Strategy</h3>
             <p class="project-detail-desc">Developed comprehensive content calendars and brand narratives aligned with seasonal campaigns, product launches, and business objectives across all digital channels.</p>
             <div class="project-detail-tags">
               <span class="tag">Content Calendar</span>
@@ -653,9 +664,11 @@
         <div class="project-detail-card" data-delay="100">
           <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Website Banners"></div>
           <div class="project-detail-body">
-            <p class="project-detail-client">Urban Buck</p>
-            <p class="project-detail-title">Website &amp; Amazon Banners</p>
-            <p class="project-detail-role">Visual Designer</p>
+            <div class="project-detail-header">
+              <span class="project-detail-client">Urban Buck</span>
+              <span class="project-detail-role">Visual Designer</span>
+            </div>
+            <h3 class="project-detail-title">Website &amp; Amazon Banners</h3>
             <p class="project-detail-desc">High-converting e-commerce banner designs for Amazon storefront, website, and promotional campaigns — optimized for click-through and brand consistency.</p>
             <div class="project-detail-tags">
               <span class="tag">E-Commerce Design</span>
@@ -668,9 +681,11 @@
         <div class="project-detail-card" data-delay="150">
           <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Photography"></div>
           <div class="project-detail-body">
-            <p class="project-detail-client">Urban Buck</p>
-            <p class="project-detail-title">Product &amp; Lifestyle Photography</p>
-            <p class="project-detail-role">Creative Director</p>
+            <div class="project-detail-header">
+              <span class="project-detail-client">Urban Buck</span>
+              <span class="project-detail-role">Creative Director</span>
+            </div>
+            <h3 class="project-detail-title">Product &amp; Lifestyle Photography</h3>
             <p class="project-detail-desc">Directed product and lifestyle photography sessions establishing Urban Buck's visual identity — from studio product shots to on-location lifestyle imagery.</p>
             <div class="project-detail-tags">
               <span class="tag">Product Photography</span>
@@ -683,9 +698,11 @@
         <div class="project-detail-card" data-delay="200">
           <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Paid Ads"></div>
           <div class="project-detail-body">
-            <p class="project-detail-client">Urban Buck</p>
-            <p class="project-detail-title">Paid Advertising Creatives</p>
-            <p class="project-detail-role">Ad Creative Lead</p>
+            <div class="project-detail-header">
+              <span class="project-detail-client">Urban Buck</span>
+              <span class="project-detail-role">Ad Creative Lead</span>
+            </div>
+            <h3 class="project-detail-title">Paid Advertising Creatives</h3>
             <p class="project-detail-desc">Performance-driven ad creatives optimized for Meta Ads, Amazon PPC, and Google campaigns — balancing brand aesthetics with conversion metrics.</p>
             <div class="project-detail-tags">
               <span class="tag">Paid Ads</span>
@@ -797,5 +814,6 @@
       }, 200);
     })();
   </script>
+
 
 </body></html>
