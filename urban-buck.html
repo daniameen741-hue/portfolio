@@ -348,23 +348,68 @@
       height: 100%;
       object-fit: contain;
     }
-    .banner-gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
+    .slider-container {
+      position: relative;
       width: 100%;
       height: 100%;
+      overflow: hidden;
+      border-radius: 16px;
     }
-    .banner-gallery img {
+    .slider-track {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .slider-track img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      flex-shrink: 0;
       display: block;
     }
-    .banner-gallery img:first-child { border-radius: 16px 0 0 0; }
-    .banner-gallery img:nth-child(2) { border-radius: 0 16px 0 0; }
-    .banner-gallery img:nth-child(3) { border-radius: 0 0 0 16px; }
-    .banner-gallery img:nth-child(4) { border-radius: 0 0 16px 0; }
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+      color: var(--fg);
+      font-size: 20px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: all 0.3s ease;
+      z-index: 10;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .slider-btn:hover { background: #fff; transform: translateY(-50%) scale(1.06); }
+    .slider-btn-prev { left: 16px; }
+    .slider-btn-next { right: 16px; }
+    .slider-dots {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+    .slider-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.45);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 0;
+    }
+    .slider-dot.active { background: #fff; width: 24px; border-radius: 4px; }
     .project-detail-body { padding: 28px; }
     .project-detail-header {
       display: flex;
@@ -680,11 +725,16 @@
 
         <div class="project-detail-card" data-delay="100">
           <div class="project-detail-image" style="padding:0;">
-            <div class="banner-gallery">
-              <img src="mqw4l9r8-BIG-SPRING-DEAL-2.jpg" alt="Big Spring Deal Banner">
-              <img src="mqw4l9w1-Skywalker-5.jpg" alt="Skywalker Banner">
-              <img src="mqw4la01-Skywalker-8.jpg" alt="Skywalker Banner">
-              <img src="mqw4l9jg-6.jpg" alt="Amazon Store Banner">
+            <div class="slider-container">
+              <div class="slider-track" id="bannerSlider">
+                <img src="mqw4l9r8-BIG-SPRING-DEAL-2.jpg" alt="Big Spring Deal Banner">
+                <img src="mqw4l9w1-Skywalker-5.jpg" alt="Skywalker Banner">
+                <img src="mqw4la01-Skywalker-8.jpg" alt="Skywalker Banner">
+                <img src="mqw4l9jg-6.jpg" alt="Amazon Store Banner">
+              </div>
+              <button class="slider-btn slider-btn-prev" onclick="slideBanner(-1)" aria-label="Previous">‹</button>
+              <button class="slider-btn slider-btn-next" onclick="slideBanner(1)" aria-label="Next">›</button>
+              <div class="slider-dots" id="bannerDots"></div>
             </div>
           </div>
           <div class="project-detail-body">
@@ -828,6 +878,35 @@
           }
         });
       }, 200);
+
+      // ---- Banner Slider ----
+      (function() {
+        var track = document.getElementById('bannerSlider');
+        var dots = document.getElementById('bannerDots');
+        if (!track) return;
+        var slides = track.children;
+        var idx = 0;
+
+        for (var i = 0; i < slides.length; i++) {
+          var dot = document.createElement('button');
+          dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Go to slide ' + (i+1));
+          dot.onclick = (function(n) { return function() { goBanner(n); }; })(i);
+          dots.appendChild(dot);
+        }
+
+        function goBanner(n) {
+          idx = n;
+          if (idx < 0) idx = slides.length - 1;
+          if (idx >= slides.length) idx = 0;
+          track.style.transform = 'translateX(' + (-idx * 100) + '%)';
+          var allDots = dots.querySelectorAll('.slider-dot');
+          for (var i = 0; i < allDots.length; i++) {
+            allDots[i].classList.toggle('active', i === idx);
+          }
+        }
+        window.slideBanner = function(dir) { goBanner(idx + dir); };
+      })();
     })();
   </script>
 
