@@ -691,14 +691,26 @@
       <div class="project-detail-grid">
 
         <div class="project-detail-card" data-delay="0">
-          <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Influencer Collaboration Campaign"></div>
+          <div class="project-detail-image" style="padding:0;">
+            <div class="slider-container">
+              <div class="slider-track" id="collabSlider">
+                <img src="mqw530ya-image.png" alt="Influencer Collaboration Instagram">
+              </div>
+              <button class="slider-btn slider-btn-prev" onclick="slideCollab(-1)" aria-label="Previous">‹</button>
+              <button class="slider-btn slider-btn-next" onclick="slideCollab(1)" aria-label="Next">›</button>
+              <div class="slider-dots" id="collabDots"></div>
+            </div>
+          </div>
           <div class="project-detail-body">
             <div class="project-detail-header">
               <span class="project-detail-client">Urban Buck</span>
               <span class="project-detail-role">Campaign Lead</span>
             </div>
             <h3 class="project-detail-title">Influencer Collaboration Campaign</h3>
-            <p class="project-detail-desc">Strategic influencer partnerships driving brand awareness and engagement across Instagram and TikTok. Managed end-to-end creator outreach, content briefs, and performance tracking.</p>
+            <p class="project-detail-desc">Strategic influencer partnerships driving brand awareness and engagement across Instagram. Managed end-to-end creator outreach, content briefs, and performance tracking.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+              <a href="https://www.instagram.com/urbanbuckpk/tagged/" target="_blank" rel="noopener" class="btn btn-primary" style="padding:8px 18px;font-size:13px;">View Collaborations →</a>
+            </div>
             <div class="project-detail-tags">
               <span class="tag">Influencer Marketing</span>
               <span class="tag">Social Media</span>
@@ -927,6 +939,35 @@
           }
         }
         window.slideBanner = function(dir) { goBanner(idx + dir); };
+      })();
+
+      // ---- Collab Slider ----
+      (function() {
+        var track = document.getElementById('collabSlider');
+        var dots = document.getElementById('collabDots');
+        if (!track) return;
+        var slides = track.children;
+        var idx = 0;
+
+        for (var i = 0; i < slides.length; i++) {
+          var dot = document.createElement('button');
+          dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Go to slide ' + (i+1));
+          dot.onclick = (function(n) { return function() { goCollab(n); }; })(i);
+          dots.appendChild(dot);
+        }
+
+        function goCollab(n) {
+          idx = n;
+          if (idx < 0) idx = slides.length - 1;
+          if (idx >= slides.length) idx = 0;
+          track.style.transform = 'translateX(' + (-idx * 100) + '%)';
+          var allDots = dots.querySelectorAll('.slider-dot');
+          for (var i = 0; i < allDots.length; i++) {
+            allDots[i].classList.toggle('active', i === idx);
+          }
+        }
+        window.slideCollab = function(dir) { goCollab(idx + dir); };
       })();
 
       // ---- Photo Slider ----
