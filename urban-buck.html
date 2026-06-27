@@ -755,7 +755,27 @@
         </div>
 
         <div class="project-detail-card" data-delay="150">
-          <div class="project-detail-image"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Photography"></div>
+          <div class="project-detail-image" style="padding:0;">
+            <div class="slider-container">
+              <div class="slider-track" id="photoSlider">
+                <img src="mqw4wvxn-Leggings-2.jpg" alt="Leggings Lifestyle">
+                <img src="mqw4wvzt-Leggings-9.jpg" alt="Leggings Lifestyle">
+                <img src="mqw4ww1p-Running-In-Summer-1.jpg" alt="Running In Summer">
+                <img src="mqw4ww43-Runnning-Skorts-1.jpg" alt="Running Skorts">
+                <img src="mqw4ww6v-Street-1.jpg" alt="Street Style">
+                <img src="mqw4ww8e-Street-2.jpg" alt="Street Style">
+                <img src="mqw4wwa1-Street-3.jpg" alt="Street Style">
+                <img src="mqw4wwbx-Street-4.jpg" alt="Street Style">
+                <img src="mqw4wwdn-Street-5.jpg" alt="Street Style">
+                <img src="mqw4wwew-Street-6.jpg" alt="Street Style">
+                <img src="mqw4wwga-Tennis-Shorts-1.jpg" alt="Tennis Shorts">
+                <img src="mqw4wwhs-Cycling-2.jpg" alt="Cycling">
+              </div>
+              <button class="slider-btn slider-btn-prev" onclick="slidePhoto(-1)" aria-label="Previous">‹</button>
+              <button class="slider-btn slider-btn-next" onclick="slidePhoto(1)" aria-label="Next">›</button>
+              <div class="slider-dots" id="photoDots"></div>
+            </div>
+          </div>
           <div class="project-detail-body">
             <div class="project-detail-header">
               <span class="project-detail-client">Urban Buck</span>
@@ -907,6 +927,35 @@
           }
         }
         window.slideBanner = function(dir) { goBanner(idx + dir); };
+      })();
+
+      // ---- Photo Slider ----
+      (function() {
+        var track = document.getElementById('photoSlider');
+        var dots = document.getElementById('photoDots');
+        if (!track) return;
+        var slides = track.children;
+        var idx = 0;
+
+        for (var i = 0; i < slides.length; i++) {
+          var dot = document.createElement('button');
+          dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Go to slide ' + (i+1));
+          dot.onclick = (function(n) { return function() { goPhoto(n); }; })(i);
+          dots.appendChild(dot);
+        }
+
+        function goPhoto(n) {
+          idx = n;
+          if (idx < 0) idx = slides.length - 1;
+          if (idx >= slides.length) idx = 0;
+          track.style.transform = 'translateX(' + (-idx * 100) + '%)';
+          var allDots = dots.querySelectorAll('.slider-dot');
+          for (var i = 0; i < allDots.length; i++) {
+            allDots[i].classList.toggle('active', i === idx);
+          }
+        }
+        window.slidePhoto = function(dir) { goPhoto(idx + dir); };
       })();
     })();
   </script>
