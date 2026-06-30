@@ -1,11 +1,50 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Danish Ibn-E-Ameen — Creative Marketing Designer</title>
+  <title>Danish Ibn-E-Ameen | AI Creative Designer &amp; Marketing Visual Specialist</title>
+  <meta name="description" content="Danish Ibn-E-Ameen is an AI Creative Designer and Marketing Visual Specialist creating brand campaigns, social media visuals, e-commerce banners, AI-assisted content, photography, video concepts, and digital marketing assets.">
+  <meta name="keywords" content="Danish Ibn-E-Ameen, AI Creative Designer, AI Marketing Designer, AI Visual Designer, Creative Designer Pakistan, Graphic Designer, Video Editor, Brand Campaign Designer, E-Commerce Visual Designer, Social Media Designer, Prompt Engineering, AI Creative Production">
+  <meta name="author" content="Danish Ibn-E-Ameen">
+  <meta property="og:title" content="Danish Ibn-E-Ameen | AI Creative Designer &amp; Marketing Visual Specialist">
+  <meta property="og:description" content="AI Creative Designer combining design, photography, video editing, marketing strategy, and AI tools to build modern brand campaigns.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daniameen741-hue.github.io/portfolio/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Danish Ibn-E-Ameen | AI Creative Designer &amp; Marketing Visual Specialist">
+  <meta name="twitter:description" content="AI Creative Designer for Brand Campaigns, E-Commerce Visuals &amp; Social Content">
+  <link rel="canonical" href="https://daniameen741-hue.github.io/portfolio/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Danish Ibn-E-Ameen",
+      "jobTitle": "AI Creative Designer and Marketing Visual Specialist",
+      "description": "AI Creative Designer creating brand campaigns, e-commerce visuals, social media content, photography, video edits, and AI-assisted creative assets.",
+      "knowsAbout": [
+        "AI Creative Production",
+        "Brand Communication",
+        "Visual Design",
+        "Social Media Campaigns",
+        "E-Commerce Banners",
+        "Photography",
+        "Video Editing",
+        "Prompt Engineering"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/danish-ibn-e-ameen-multitalentasks",
+        "https://www.instagram.com/lifeof.danish/",
+        "https://github.com/daniameen741-hue"
+      ]
+    }
+  }
+  </script>
   <style>
     :root {
       --primary: #0B0B0B;
@@ -17,12 +56,14 @@
       --muted: #6B7280;
       --surface: #FFFFFF;
       --radius: 24px;
+      --radius-sm: 16px;
       --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.04);
       --shadow-hover: 0 8px 40px rgba(0,0,0,0.08);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.06);
       --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
       --font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
       --nav-height: 72px;
-      --transition: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      --transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,9 +76,13 @@
       background: var(--bg);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
     }
 
     ::selection { background: var(--accent); color: #fff; }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
 
     /* ---- Navigation ---- */
     nav {
@@ -61,7 +106,7 @@
       text-decoration: none;
       font-family: var(--font-display);
       font-weight: 700;
-      font-size: 20px;
+      font-size: 18px;
       letter-spacing: -0.02em;
       color: var(--fg);
     }
@@ -74,13 +119,13 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 28px;
       list-style: none;
     }
     .nav-links a {
       text-decoration: none;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       letter-spacing: 0.02em;
       transition: color var(--transition);
@@ -102,7 +147,7 @@
       padding: 8px 20px;
       background: var(--primary);
       color: #fff !important;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       letter-spacing: 0.02em;
       border-radius: 100px;
@@ -114,7 +159,7 @@
     .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
     .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--fg); border-radius: 2px; transition: var(--transition); }
 
-    /* ---- Main container ---- */
+    /* ---- Main ---- */
     main {
       max-width: 1280px;
       margin: 0 auto;
@@ -126,7 +171,7 @@
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       gap: 24px;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
     }
 
     .card {
@@ -143,52 +188,44 @@
       box-shadow: var(--shadow-hover);
       transform: translateY(-4px);
     }
-    .card img { max-width: 100%; height: auto; display: block; }
 
-    /* ---- Hero ---- */
-    .hero-card {
-      grid-column: span 7;
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 40px;
-      align-items: center;
-      padding: 0;
-      overflow: hidden;
-    }
-    .hero-card:hover { transform: translateY(-2px); }
-    .hero-image {
-      width: 100%;
-      height: 100%;
-      min-height: 480px;
-      object-fit: cover;
-      border-radius: var(--radius) 0 0 var(--radius);
-    }
-    .hero-content { padding: 48px 48px 48px 0; }
-    .hero-name {
-      font-family: var(--font-display);
-      font-size: clamp(36px, 4vw, 72px);
-      font-weight: 700;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-      color: var(--fg);
-      margin-bottom: 8px;
-    }
-    .hero-headline {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 500;
+    /* ---- Section Headers ---- */
+    .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--accent);
-      letter-spacing: -0.01em;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .hero-desc {
+    .section-label::before {
+      content: '';
+      width: 20px;
+      height: 1.5px;
+      background: var(--accent);
+      display: block;
+    }
+    .section-heading {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3.2vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: var(--fg);
+      margin-bottom: 12px;
+    }
+    .section-sub {
       font-size: 16px;
-      line-height: 1.65;
       color: var(--muted);
-      max-width: 45ch;
-      margin-bottom: 28px;
+      max-width: 55ch;
+      margin-bottom: 40px;
+      line-height: 1.6;
     }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* ---- Buttons ---- */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -223,39 +260,171 @@
       color: var(--accent);
       transform: translateY(-2px);
     }
+    .btn-sm {
+      padding: 8px 20px;
+      font-size: 13px;
+    }
+
+    /* ---- HERO ---- */
+    .hero-bento {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .hero-main {
+      grid-column: 1;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-visual {
+      grid-column: 2;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-visual-inner {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .hero-visual-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius);
+    }
+    .hero-visual-accent {
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
     .hero-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      margin-top: 24px;
-      padding: 8px 16px;
-      background: rgba(0,0,0,0.03);
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(37, 99, 235, 0.08);
       border-radius: 100px;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .hero-badge img { height: 20px; width: auto; border-radius: 4px; }
-    .hero-badge .brand-text {
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.06em;
       text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: pulse-dot 2s ease infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 4.5vw, 72px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--fg);
+      margin-bottom: 8px;
+    }
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(18px, 1.6vw, 24px);
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .hero-desc {
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--muted);
+      max-width: 50ch;
+      margin-bottom: 28px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .hero-brand-logos {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    .hero-brand-logos-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: var(--muted);
     }
+    .hero-brand-logos a {
+      display: inline-flex;
+      align-items: center;
+      opacity: 0.6;
+      transition: opacity var(--transition);
+    }
+    .hero-brand-logos a:hover { opacity: 1; }
+    .hero-brand-logos img {
+      height: 20px;
+      width: auto;
+      object-fit: contain;
+    }
 
-    /* ---- Side cards ---- */
-    .side-cards { grid-column: span 5; display: flex; flex-direction: column; gap: 24px; }
+    /* ---- Side Cards Row (under hero) ---- */
+    .side-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
     .side-card {
-      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     .side-card-label {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -264,187 +433,152 @@
     }
     .side-card-title {
       font-family: var(--font-display);
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       letter-spacing: -0.01em;
       color: var(--fg);
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
     .side-card-sub {
-      font-size: 16px;
+      font-size: 14px;
       color: var(--muted);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     .side-card-tags {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       flex-wrap: wrap;
     }
     .tag {
       padding: 4px 12px;
       background: rgba(0,0,0,0.04);
       border-radius: 100px;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 500;
       letter-spacing: 0.02em;
       color: var(--muted);
     }
     .tag-solid { background: var(--accent); color: #fff; }
 
-    /* ---- Second Grid ---- */
-    .grid-3 { grid-column: span 4; }
-    .grid-3 .card-title {
-      font-family: var(--font-display);
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-    .brand-logos {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .brand-logos img {
-      height: 28px;
-      width: auto;
-      object-fit: contain;
-      opacity: 0.75;
-      transition: opacity var(--transition);
-    }
-    .brand-logos img:hover { opacity: 1; }
-    .exp-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .exp-item {
-      font-size: 15px;
-      color: var(--fg);
-      padding-left: 16px;
-      border-left: 2px solid rgba(0,0,0,0.08);
-    }
-
-    /* ---- Section headers ---- */
-    .section-heading {
-      font-family: var(--font-display);
-      font-size: clamp(28px, 3.5vw, 40px);
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      line-height: 1.15;
-      color: var(--fg);
-      margin-bottom: 12px;
-    }
-    .section-sub {
-      font-size: 16px;
-      color: var(--muted);
-      max-width: 55ch;
-      margin-bottom: 40px;
-    }
-
     /* ---- About ---- */
-    .about-card { grid-column: span 12; }
-    .about-card .section-heading { margin-bottom: 20px; }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .about-text { grid-column: 1; }
+    .about-text .section-heading { margin-bottom: 20px; }
     .about-body {
-      font-size: 17px;
-      line-height: 1.7;
+      font-size: 16px;
+      line-height: 1.75;
       color: var(--muted);
-      max-width: 75ch;
     }
     .about-body p { margin-bottom: 16px; }
     .about-body p:last-child { margin-bottom: 0; }
+    .about-stats {
+      grid-column: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-content: start;
+    }
+    .about-stat {
+      text-align: center;
+      padding: 28px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-light);
+    }
+    .about-stat-num {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+    .about-stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
 
-    /* ---- Expertise ---- */
-    .expertise-grid {
+    /* ---- AI Workflow ---- */
+    .workflow-grid {
       grid-column: span 12;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
     }
-    .expertise-card {
+    .workflow-card {
       text-align: center;
-      padding: 36px 28px;
+      padding: 32px 16px;
+      position: relative;
     }
-    .expertise-icon {
-      width: 48px;
-      height: 48px;
-      margin: 0 auto 20px;
-      display: grid;
-      place-items: center;
-      background: rgba(37, 99, 235, 0.08);
-      border-radius: 14px;
-      color: var(--accent);
-    }
-    .expertise-icon svg { width: 24px; height: 24px; }
-    .expertise-card h3 {
+    .workflow-num {
       font-family: var(--font-display);
-      font-size: 18px;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 16px;
+      opacity: 0.3;
+    }
+    .workflow-card h3 {
+      font-family: var(--font-display);
+      font-size: 16px;
       font-weight: 600;
       letter-spacing: -0.01em;
       margin-bottom: 8px;
     }
-    .expertise-card p {
-      font-size: 14px;
+    .workflow-card p {
+      font-size: 13px;
       color: var(--muted);
       line-height: 1.5;
     }
-
-    /* ---- Experience Timeline ---- */
-    .timeline-card { grid-column: span 12; }
-    .timeline { display: flex; flex-direction: column; gap: 0; }
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 40px;
-      padding: 28px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
+    .workflow-arrow {
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 20px;
+      opacity: 0.25;
     }
-    .timeline-item:last-child { border-bottom: none; }
-    .timeline-left {
-      text-align: right;
-      padding-right: 24px;
-      border-right: 1px solid rgba(0,0,0,0.08);
+    .workflow-grid .workflow-card:last-child .workflow-arrow { display: none; }
+    .workflow-statement {
+      grid-column: span 12;
+      text-align: center;
+      padding: 32px 40px;
+      background: linear-gradient(135deg, rgba(37,99,235,0.04) 0%, rgba(37,99,235,0.08) 100%);
+      border-radius: var(--radius);
+      border: 1px solid rgba(37,99,235,0.10);
+      margin-top: 8px;
     }
-    .timeline-company {
-      font-family: var(--font-display);
-      font-size: 18px;
+    .workflow-statement p {
+      font-size: 15px;
+      font-weight: 450;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .workflow-statement strong {
+      color: var(--fg);
       font-weight: 600;
-      letter-spacing: -0.01em;
     }
-    .timeline-period {
-      font-size: 13px;
-      color: var(--muted);
-      letter-spacing: 0.02em;
-      margin-top: 4px;
-    }
-    .timeline-role {
-      font-size: 16px;
-      font-weight: 500;
-      color: var(--accent);
-      margin-bottom: 4px;
-    }
-    .timeline-location {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .timeline-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .timeline-tags .tag { font-size: 11px; padding: 3px 10px; }
 
-    /* ---- Featured Projects ---- */
-    .projects-grid {
+    /* ---- Case Studies ---- */
+    .case-grid {
       grid-column: span 12;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
     }
-    .project-card {
+    .case-card {
       background: var(--card-bg);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
@@ -454,130 +588,133 @@
       overflow: hidden;
       transition: all var(--transition);
     }
-    .project-card:hover {
+    .case-card:hover {
       box-shadow: var(--shadow-hover);
       transform: translateY(-6px);
     }
-    .project-image-wrap {
-      width: 100%;
-      aspect-ratio: 16/10;
-      overflow: hidden;
-      background: rgba(0,0,0,0.02);
+    .case-header {
+      padding: 32px 32px 0;
+    }
+    .case-brand-row {
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .project-image-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    .project-body { padding: 24px; }
-    .project-client {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-    .project-title {
-      font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      margin-bottom: 6px;
-    }
-    .project-role {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-    .project-desc {
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.5;
-      margin-bottom: 16px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .project-link {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--accent);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      transition: gap var(--transition);
-    }
-    .project-link:hover { gap: 8px; }
-
-    /* ---- Creative Process ---- */
-    .process-grid {
-      grid-column: span 12;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-    }
-    .process-card {
-      text-align: center;
-      padding: 32px 16px;
-      position: relative;
-    }
-    .process-num {
-      font-family: var(--font-display);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--accent);
+      justify-content: space-between;
       margin-bottom: 12px;
     }
-    .process-card h3 {
+    .case-brand {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .case-role {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+    .case-title {
       font-family: var(--font-display);
-      font-size: 16px;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .case-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .case-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 0 32px 24px;
+    }
+    .case-spec {
+      padding: 12px;
+      background: rgba(0,0,0,0.02);
+      border-radius: 12px;
+    }
+    .case-spec-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .case-spec-value {
+      font-size: 13px;
+      color: var(--fg);
+      line-height: 1.4;
+    }
+    .case-footer {
+      padding: 16px 32px 24px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .case-footer .tag { font-size: 10px; }
+
+    /* ---- Skills ---- */
+    .skills-grid {
+      grid-column: span 12;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .skill-card {
+      text-align: center;
+      padding: 28px 16px;
+    }
+    .skill-icon {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(37, 99, 235, 0.08);
+      border-radius: 12px;
+      color: var(--accent);
+    }
+    .skill-icon svg { width: 22px; height: 22px; }
+    .skill-card h3 {
+      font-family: var(--font-display);
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: -0.01em;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
-    .process-card p {
-      font-size: 13px;
+    .skill-card p {
+      font-size: 12px;
       color: var(--muted);
       line-height: 1.4;
     }
-    .process-arrow {
-      position: absolute;
-      right: -12px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--muted);
-      font-size: 18px;
-      opacity: 0.4;
-    }
-    .process-grid .process-card:last-child .process-arrow { display: none; }
 
     /* ---- Tools ---- */
-    .tools-card {
+    .tools-grid {
       grid-column: span 12;
       text-align: center;
+      padding: 48px 40px;
     }
-    .tools-grid {
+    .tools-grid .section-heading { margin-bottom: 8px; }
+    .tools-grid .section-sub { margin: 0 auto 32px; }
+    .tool-chips {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      margin-top: 24px;
+      gap: 10px;
     }
     .tool-chip {
-      padding: 10px 20px;
+      padding: 10px 22px;
       background: rgba(0,0,0,0.03);
       border: 1px solid rgba(0,0,0,0.06);
       border-radius: 100px;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       color: var(--muted);
       transition: all var(--transition);
@@ -589,15 +726,40 @@
       transform: translateY(-2px);
     }
 
+    /* ---- Professional Proof ---- */
+    .proof-card {
+      grid-column: span 12;
+      text-align: center;
+      padding: 56px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .proof-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .proof-card .section-heading { margin-bottom: 16px; }
+    .proof-desc {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 65ch;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .proof-desc strong { color: var(--fg); }
+
     /* ---- Contact ---- */
     .contact-card {
       grid-column: span 12;
       text-align: center;
       padding: 64px 48px;
     }
-    .contact-card .section-heading { margin-bottom: 16px; }
+    .contact-card .section-heading { margin-bottom: 12px; }
     .contact-desc {
-      font-size: 17px;
+      font-size: 16px;
       color: var(--muted);
       max-width: 55ch;
       margin: 0 auto 32px;
@@ -630,7 +792,15 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
-    .contact-btn.highlight { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .contact-btn.highlight {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .contact-btn.highlight:hover {
+      background: #1d4ed8;
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.25);
+    }
 
     /* ---- Footer ---- */
     footer {
@@ -675,45 +845,63 @@
 
     /* ---- Responsive ---- */
     @media (max-width: 1024px) {
-      .hero-card { grid-column: span 12; }
-      .side-cards { grid-column: span 12; flex-direction: row; }
-      .side-cards .side-card { flex: 1; }
-      .expertise-grid { grid-template-columns: repeat(2, 1fr); }
-      .projects-grid { grid-template-columns: repeat(2, 1fr); }
-      .process-grid { grid-template-columns: repeat(3, 1fr); }
-      .process-grid .process-card:nth-child(3) .process-arrow { display: none; }
+      .hero-bento { grid-template-columns: 1fr; }
+      .hero-main { grid-column: 1; }
+      .hero-visual { grid-column: 1; }
+      .hero-visual-inner { min-height: 360px; }
+      .side-row { grid-template-columns: repeat(2, 1fr); }
+      .side-row .side-card:last-child { grid-column: span 2; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-stats { grid-column: 1; grid-template-columns: repeat(3, 1fr); }
+      .case-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: repeat(3, 1fr); }
+      .workflow-grid { grid-template-columns: repeat(3, 1fr); }
+      .workflow-grid .workflow-card:nth-child(3) .workflow-arrow { display: none; }
     }
 
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
-      .nav-links { display: none; position: fixed; top: var(--nav-height); left: 0; right: 0; flex-direction: column; background: rgba(248,249,250,0.98); backdrop-filter: blur(16px); padding: 24px; gap: 20px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: var(--nav-height);
+        left: 0; right: 0;
+        flex-direction: column;
+        background: rgba(248,249,250,0.98);
+        backdrop-filter: blur(16px);
+        padding: 24px;
+        gap: 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
       .nav-links.open { display: flex; }
-      .nav-links a { font-size: 16px; }
+      .nav-links a { font-size: 15px; }
       .nav-toggle { display: flex; }
       main { padding: calc(var(--nav-height) + 24px) 16px 60px; }
       .bento { gap: 16px; }
       .card { padding: 24px; }
-      .hero-card { grid-template-columns: 1fr; }
-      .hero-image { min-height: 300px; border-radius: var(--radius) var(--radius) 0 0; }
-      .hero-content { padding: 24px; }
-      .side-cards { flex-direction: column; }
-      .grid-3 { grid-column: span 12; }
-      .expertise-grid { grid-template-columns: 1fr; }
-      .timeline-item { grid-template-columns: 1fr; gap: 8px; }
-      .timeline-left { text-align: left; border-right: none; padding-right: 0; padding-bottom: 8px; border-bottom: 1px solid rgba(0,0,0,0.05); }
-      .projects-grid { grid-template-columns: 1fr; }
-      .process-grid { grid-template-columns: repeat(2, 1fr); }
-      .process-grid .process-card:nth-child(2) .process-arrow,
-      .process-grid .process-card:nth-child(4) .process-arrow { display: none; }
+      .hero-visual-inner { min-height: 280px; }
+      .hero-visual-inner img { border-radius: var(--radius); }
+      .side-row { grid-template-columns: 1fr; }
+      .side-row .side-card:last-child { grid-column: span 1; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .case-specs { grid-template-columns: 1fr; }
       .contact-card { padding: 40px 24px; }
+      .proof-card { padding: 40px 24px; }
+      .workflow-grid { grid-template-columns: repeat(2, 1fr); }
+      .workflow-grid .workflow-card:nth-child(2) .workflow-arrow,
+      .workflow-grid .workflow-card:nth-child(4) .workflow-arrow { display: none; }
       footer { flex-direction: column; text-align: center; }
     }
 
     @media (max-width: 480px) {
       .hero-name { font-size: 32px; }
-      .hero-image { min-height: 240px; }
-      .process-grid { grid-template-columns: 1fr; }
-      .process-arrow { display: none !important; }
+      .hero-headline { font-size: 16px; }
+      .hero-visual-inner { min-height: 220px; }
+      .about-stats { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .workflow-grid { grid-template-columns: 1fr; }
+      .workflow-arrow { display: none !important; }
     }
   </style>
 </head>
@@ -721,17 +909,18 @@
 
   <!-- Navigation -->
   <nav>
-    <a href="#" class="nav-logo" style="font-size: 9px;">
-      <img src="mqvaeyw1-ChatGPT-Image-Jun-26_-2026_-11_10_06-PM.png" alt="D">
+    <a href="#" class="nav-logo">
+      <img src="mqvaehbb-ChatGPT-Image-Jun-26_-2026_-11_02_41-PM.png" alt="Danish Ibn-E-Ameen">
       Danish Ibn-E-Ameen
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      <li><a href="#ai-workflow">AI Workflow</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Me</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -739,370 +928,435 @@
   </nav>
 
   <main>
-    <!-- HERO + SIDE CARDS -->
-    <div class="bento" id="home">
-      <div class="card hero-card" data-delay="0">
-        <img class="hero-image" src="mqvaehbb-ChatGPT-Image-Jun-26_-2026_-11_02_41-PM.png" alt="Danish Ibn-E-Ameen">
-        <div class="hero-content">
-          <h1 class="hero-name">Danish Ibn-E-Ameen</h1>
-          <p class="hero-headline">Creative Marketing Designer</p>
-          <p class="hero-desc">Helping brands communicate through strategic design, visual storytelling, AI-assisted creative production, content strategy, and digital marketing campaigns.</p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Portfolio</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
-          </div>
-          <div class="hero-badge" style="background-color: rgb(255, 255, 255);">
-            Currently Working With
-            <a href="urban-buck.html" style="display:inline-flex;align-items:center;gap:4px;text-decoration:none;"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck" style="height:18px;width:auto;border-radius:0;"></a>
-            <a href="http://rumi.com.pk/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;text-decoration:none;"><img src="mqvag8v1-Logo-Black.png" alt="RUMI" style="height:14px;width:auto;border-radius:0;"></a>
-            <a href="https://vircanor.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;text-decoration:none;"><img src="mqvaj2lp-image.png" alt="Vircanor" style="height:14px;width:auto;border-radius:0;"></a>
-            <a href="https://titans-corp.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;text-decoration:none;"><img src="mqvaiiyy-Logo.png" alt="Titans Corporation" style="height:14px;width:auto;border-radius:0;"></a>
-          </div>
+
+    <!-- HERO -->
+    <div class="hero-bento" id="home">
+      <div class="card hero-main" data-delay="0">
+        <div class="hero-badge-row">
+          <span class="hero-badge"><span class="hero-badge-dot"></span> Available for projects</span>
+        </div>
+        <p class="hero-title">AI Creative Designer &amp; Marketing Visual Specialist</p>
+        <h1 class="hero-name">Danish Ibn-E-Ameen</h1>
+        <p class="hero-headline">AI Creative Designer for Brand Campaigns, E-Commerce Visuals &amp; Social Content</p>
+        <p class="hero-desc">I combine design, photography, video editing, marketing strategy, and AI tools to create high-impact visuals for modern brands.</p>
+        <div class="hero-actions">
+          <a href="#ai-workflow" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            View AI Work
+          </a>
+          <a href="#case-studies" class="btn btn-outline">View Brand Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-brand-logos">
+          <span class="hero-brand-logos-label">Working with</span>
+          <a href="urban-buck.html"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck"></a>
+          <a href="http://rumi.com.pk/" target="_blank" rel="noopener"><img src="mqvag8v1-Logo-Black.png" alt="RUMI" style="height:16px;"></a>
+          <a href="https://vircanor.com/" target="_blank" rel="noopener"><img src="mqvaj2lp-image.png" alt="Vircanor"></a>
+          <a href="https://titans-corp.com/" target="_blank" rel="noopener"><img src="mqvaiiyy-Logo.png" alt="Titans Corporation"></a>
         </div>
       </div>
-      <div class="side-cards">
-        <div class="card side-card" data-delay="100">
-          <p class="side-card-label">Current Role</p>
-          <p class="side-card-title">Senior Executive</p>
-          <p class="side-card-sub">Media &amp; Graphics · Titans Corporation</p>
-          <div class="side-card-tags">
-            <span class="tag tag-solid">Full-Time</span>
-            <span class="tag">On Site</span>
-          </div>
-        </div>
-        <div class="card side-card" data-delay="150">
-          <p class="side-card-label">Remote Role</p>
-          <p class="side-card-title">AI Visual Assistant</p>
-          <p class="side-card-sub">Creative Designer · Vircanor</p>
-          <div class="side-card-tags">
-            <span class="tag tag-solid">Part-Time</span>
-            <span class="tag">Remote</span>
-          </div>
+      <div class="card hero-visual" data-delay="100">
+        <div class="hero-visual-inner">
+          <div class="hero-visual-accent"></div>
+          <img src="mqvaehbb-ChatGPT-Image-Jun-26_-2026_-11_02_41-PM.png" alt="Danish Ibn-E-Ameen — AI Creative Designer and Marketing Visual Specialist" loading="eager">
         </div>
       </div>
     </div>
 
-    <!-- SECOND GRID -->
-    <div class="bento">
-      <div class="card grid-3" data-delay="50">
-        <p class="card-title">Brands</p>
-        <div class="brand-logos">
-          <a href="urban-buck.html" rel="noopener"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck"></a>
-          <a href="http://rumi.com.pk/" target="_blank" rel="noopener"><img src="mqvag8v1-Logo-Black.png" alt="RUMI" style="width: 50px; height: 50px;"></a>
-          <a href="https://vircanor.com/" target="_blank" rel="noopener"><img src="mqvaj2lp-image.png" alt="Vircanor" style="height:24px;object-fit:contain;"></a>
-          <a href="https://titans-corp.com/" target="_blank" rel="noopener"><img src="mqvaiiyy-Logo.png" alt="Titans Corporation"></a>
+    <!-- SIDE CARDS -->
+    <div class="side-row">
+      <div class="card side-card" data-delay="50">
+        <p class="side-card-label">Current Role</p>
+        <p class="side-card-title">Senior Executive</p>
+        <p class="side-card-sub">Media &amp; Graphics · Titans Corporation</p>
+        <div class="side-card-tags">
+          <span class="tag tag-solid">Full-Time</span>
+          <span class="tag">On Site</span>
         </div>
       </div>
-      <div class="card grid-3" data-delay="100">
-        <p class="card-title">Education</p>
-        <img src="mqvahzby-images.jfif" alt="University of Karachi" style="height:28px;margin-bottom:10px;object-fit:contain;">
-        <p style="font-family:var(--font-display);font-size:20px;font-weight:600;letter-spacing:-0.01em;margin-bottom:4px;">Bachelor of Design &amp; Media</p>
-        <p style="font-size:15px;color:var(--muted);">University of Karachi</p>
+      <div class="card side-card" data-delay="100">
+        <p class="side-card-label">Remote Role</p>
+        <p class="side-card-title">AI Visual Assistant</p>
+        <p class="side-card-sub">Creative Designer · Vircanor</p>
+        <div class="side-card-tags">
+          <span class="tag tag-solid">Part-Time</span>
+          <span class="tag">Remote</span>
+        </div>
       </div>
-      <div class="card grid-3" data-delay="150">
-        <p class="card-title">Experience</p>
-        <div class="exp-list">
-          <div class="exp-item">Creative Campaigns</div>
-          <div class="exp-item">Brand Communication</div>
-          <div class="exp-item">Visual Storytelling</div>
-          <div class="exp-item">Creative Strategy</div>
-          <div class="exp-item">Photography</div>
-          <div class="exp-item">Video Editing</div>
-          <div class="exp-item">AI Creative Production</div>
+      <div class="card side-card" data-delay="150">
+        <p class="side-card-label">Brands</p>
+        <p class="side-card-title" style="margin-bottom:8px;">Urban Buck · RUMI</p>
+        <div class="side-card-tags">
+          <span class="tag">E-Commerce</span>
+          <span class="tag">Luxury</span>
+          <span class="tag">Lifestyle</span>
         </div>
       </div>
     </div>
 
     <!-- ABOUT -->
-    <div class="bento" id="about">
-      <div class="card about-card" data-delay="50">
+    <div class="about-grid" id="about">
+      <div class="card about-text" data-delay="50">
+        <p class="section-label" style="margin-top:0;">About</p>
         <h2 class="section-heading">Designing Creative Experiences That Help Brands Grow.</h2>
         <div class="about-body">
-          <p>I specialize in brand communication, creative strategy, visual storytelling, AI-assisted creative production, photography, video editing, and digital marketing campaigns.</p>
-          <p>I currently work as Senior Executive – Media &amp; Graphics at <a href="https://titans-corp.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;font-weight:500;">Titans Corporation</a>, where I contribute to <a href="urban-buck.html" style="color:var(--accent);text-decoration:none;font-weight:500;">Urban Buck</a>'s creative growth through social media campaigns, influencer collaborations, content strategy, photography, and brand communication.</p>
-          <p>Alongside my full-time role, I work remotely with <a href="https://vircanor.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;font-weight:500;">Vircanor</a> as an AI Visual Assistant and Creative Designer, contributing to luxury branding and creative campaigns for <a href="http://rumi.com.pk/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;font-weight:500;">RUMI</a>.</p>
+          <p>I am a creative designer and visual content creator who works with AI-powered tools and traditional design skills. I create content for brands, e-commerce, social media, ads, product campaigns, and digital platforms.</p>
+          <p>I use AI to speed up creative production, generate concepts, improve visual direction, and build better campaign ideas — combined with my own skills in design, editing, branding, layout, content planning, and marketing execution.</p>
+          <p>Currently working as Senior Executive – Media &amp; Graphics at <strong><a href="https://titans-corp.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Titans Corporation</a></strong> (contributing to <strong><a href="urban-buck.html" style="color:var(--accent);text-decoration:none;">Urban Buck</a></strong>'s creative growth), and remotely as an AI Visual Assistant and Creative Designer at <strong><a href="https://vircanor.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Vircanor</a></strong>, contributing to luxury branding and creative campaigns for <strong><a href="http://rumi.com.pk/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">RUMI</a></strong>.</p>
+        </div>
+      </div>
+      <div class="about-stats" data-delay="100">
+        <div class="about-stat">
+          <p class="about-stat-num">4</p>
+          <p class="about-stat-label">Brands Served</p>
+        </div>
+        <div class="about-stat">
+          <p class="about-stat-num">50+</p>
+          <p class="about-stat-label">Campaign Assets</p>
+        </div>
+        <div class="about-stat">
+          <p class="about-stat-num">3+</p>
+          <p class="about-stat-label">Years Experience</p>
+        </div>
+        <div class="about-stat">
+          <p class="about-stat-num">10+</p>
+          <p class="about-stat-label">AI Tools Used</p>
         </div>
       </div>
     </div>
 
-    <!-- EXPERTISE -->
-    <div class="bento" id="expertise">
+    <!-- AI WORKFLOW -->
+    <div class="bento" id="ai-workflow">
       <div style="grid-column:span 12;">
-        <h2 class="section-heading">Expertise</h2>
-        <p class="section-sub">Six core capabilities that drive measurable brand impact.</p>
+        <p class="section-label">Process</p>
+        <h2 class="section-heading">AI Workflow Proof</h2>
+        <p class="section-sub">How I combine AI tools with creative expertise to deliver brand-ready assets — faster, smarter, and with full creative direction.</p>
       </div>
-      <div class="expertise-grid">
-        <div class="card expertise-card" data-delay="0">
-          <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
-          <h3>Brand Communication</h3>
-          <p>Strategic messaging that connects brands with their audience across every touchpoint.</p>
-        </div>
-        <div class="card expertise-card" data-delay="50">
-          <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></div>
-          <h3>Creative Strategy</h3>
-          <p>Data-informed creative direction that solves business problems through design.</p>
-        </div>
-        <div class="card expertise-card" data-delay="100">
-          <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
-          <h3>Visual Design</h3>
-          <p>Purpose-driven design systems, typography, and composition for digital and print.</p>
-        </div>
-        <div class="card expertise-card" data-delay="150">
-          <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>
-          <h3>AI Creative Production</h3>
-          <p>Leveraging AI tools to accelerate creative workflows and generate high-quality assets.</p>
-        </div>
-        <div class="card expertise-card" data-delay="200">
-          <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>
-          <h3>Video Content Production</h3>
-          <p>End-to-end video production from concept development to final edit and delivery.</p>
-        </div>
-        <div class="card expertise-card" data-delay="250">
-          <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>
-          <h3>Photography &amp; Creative Production</h3>
-          <p>Professional photography and creative direction for brand campaigns and product shoots.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- EXPERIENCE TIMELINE -->
-    <div class="bento" id="experience">
-      <div style="grid-column:span 12;">
-        <h2 class="section-heading">Experience</h2>
-        <p class="section-sub">A track record of delivering creative impact across industries.</p>
-      </div>
-      <div class="card timeline-card" data-delay="50">
-        <div class="timeline">
-
-          <div class="timeline-item">
-            <div class="timeline-left">
-              <p class="timeline-company">Titans Corporation</p>
-              <p class="timeline-period">Present</p>
-            </div>
-            <div>
-              <p class="timeline-role">Senior Executive — Media &amp; Graphics</p>
-              <p class="timeline-location">On Site · Full-Time</p>
-              <div class="timeline-tags">
-                <span class="tag">Social Media Campaigns</span>
-                <span class="tag">Influencer Collaboration</span>
-                <span class="tag">Brand Communication</span>
-                <span class="tag">Website Banners</span>
-                <span class="tag">Creative Planning</span>
-                <span class="tag">Photography</span>
-                <span class="tag">Studio Production</span>
-                <span class="tag">AI Visual Content</span>
-                <span class="tag">Paid Advertising Assets</span>
-                <span class="tag">Content Calendar</span>
-                <span class="tag">Brand Growth</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-left">
-              <img src="mqvaj2lp-image.png" alt="Vircanor" style="height:18px;object-fit:contain;margin-bottom:4px;">
-              <p class="timeline-company">Vircanor</p>
-              <p class="timeline-period">Present</p>
-            </div>
-            <div>
-              <p class="timeline-role">AI Visual Assistant — Creative Designer</p>
-              <p class="timeline-location">Remote · Part-Time</p>
-              <div class="timeline-tags">
-                <span class="tag">Luxury Campaigns</span>
-                <span class="tag">Father's Day Campaign</span>
-                <span class="tag">Editorial Creative</span>
-                <span class="tag">AI Generated Visuals</span>
-                <span class="tag">Paid Ads</span>
-                <span class="tag">Social Media Content</span>
-                <span class="tag">Reels</span>
-                <span class="tag">Creative Storytelling</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- FEATURED PROJECTS -->
-    <div class="bento" id="projects">
-      <div style="grid-column:span 12;">
-        <h2 class="section-heading">Featured Projects</h2>
-        <p class="section-sub">Selected work from brand partnerships and creative campaigns.</p>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card" data-delay="0">
-          <div class="project-image-wrap"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck"></div>
-          <div class="project-body">
-            <p class="project-client">Urban Buck</p>
-            <p class="project-title">Influencer Collaboration Campaign</p>
-            <p class="project-role">Campaign Lead</p>
-            <p class="project-desc">Strategic influencer partnerships driving brand awareness and engagement across social platforms.</p>
-            <a href="urban-buck.html" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="50">
-          <div class="project-image-wrap"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck"></div>
-          <div class="project-body">
-            <p class="project-client">Urban Buck</p>
-            <p class="project-title">Content Strategy</p>
-            <p class="project-role">Content Strategist</p>
-            <p class="project-desc">Developed comprehensive content calendars and brand narratives aligned with business objectives.</p>
-            <a href="urban-buck.html" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="100">
-          <div class="project-image-wrap"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck"></div>
-          <div class="project-body">
-            <p class="project-client">Urban Buck</p>
-            <p class="project-title">Website Banners</p>
-            <p class="project-role">Visual Designer</p>
-            <p class="project-desc">High-converting e-commerce banner designs for Amazon storefront and web channels.</p>
-            <a href="urban-buck.html" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="150">
-          <div class="project-image-wrap"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck"></div>
-          <div class="project-body">
-            <p class="project-client">Urban Buck</p>
-            <p class="project-title">Photography</p>
-            <p class="project-role">Creative Director</p>
-            <p class="project-desc">Product and lifestyle photography directing visual identity for brand campaigns.</p>
-            <a href="urban-buck.html" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="200">
-          <div class="project-image-wrap"><img src="mqva5w7s-cropped-NEW-URBAN-BUCK-LOGO-DG-scaled-1-2048x481_180x_2x.jpg" alt="Urban Buck"></div>
-          <div class="project-body">
-            <p class="project-client">Urban Buck</p>
-            <p class="project-title">Paid Ads</p>
-            <p class="project-role">Ad Creative Lead</p>
-            <p class="project-desc">Performance-driven ad creatives optimized for social media and search platforms.</p>
-            <a href="urban-buck.html" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="250">
-          <div class="project-image-wrap"><img src="mqvag8v1-Logo-Black.png" alt="RUMI"></div>
-          <div class="project-body">
-            <p class="project-client">RUMI</p>
-            <p class="project-title">Father's Day Campaign</p>
-            <p class="project-role">Creative Designer</p>
-            <p class="project-desc">Luxury brand campaign concept, visual assets, and social media execution for Father's Day.</p>
-            <a href="http://rumi.com.pk/" target="_blank" rel="noopener" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="300">
-          <div class="project-image-wrap"><img src="mqvag8v1-Logo-Black.png" alt="RUMI"></div>
-          <div class="project-body">
-            <p class="project-client">RUMI</p>
-            <p class="project-title">Editorial Campaign</p>
-            <p class="project-role">Creative Director</p>
-            <p class="project-desc">Editorial visuals and campaign storytelling for luxury brand positioning.</p>
-            <a href="http://rumi.com.pk/" target="_blank" rel="noopener" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="350">
-          <div class="project-image-wrap"><img src="mqvag8v1-Logo-Black.png" alt="RUMI"></div>
-          <div class="project-body">
-            <p class="project-client">RUMI</p>
-            <p class="project-title">Luxury Product Visuals</p>
-            <p class="project-role">Visual Designer</p>
-            <p class="project-desc">High-end product photography and visual assets for luxury brand campaigns.</p>
-            <a href="http://rumi.com.pk/" target="_blank" rel="noopener" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card" data-delay="400">
-          <div class="project-image-wrap"><img src="mqvag8v1-Logo-Black.png" alt="RUMI"></div>
-          <div class="project-body">
-            <p class="project-client">RUMI</p>
-            <p class="project-title">AI Creative Production</p>
-            <p class="project-role">AI Visual Lead</p>
-            <p class="project-desc">AI-assisted creative workflows generating high-quality visual assets for luxury brand campaigns.</p>
-            <a href="https://vircanor.com/" target="_blank" rel="noopener" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CREATIVE PROCESS -->
-    <div class="bento">
-      <div style="grid-column:span 12;">
-        <h2 class="section-heading">Creative Process</h2>
-        <p class="section-sub">A repeatable framework for delivering brand impact.</p>
-      </div>
-      <div class="process-grid">
-        <div class="card process-card" data-delay="0">
-          <span class="process-arrow">→</span>
-          <p class="process-num">01</p>
+      <div class="workflow-grid">
+        <div class="card workflow-card" data-delay="0">
+          <span class="workflow-arrow">→</span>
+          <p class="workflow-num">01</p>
           <h3>Research</h3>
-          <p>Deep dive into brand, audience, market, and competitive landscape.</p>
+          <p>I study the brand, product, audience, market style, and campaign goal before any creative work begins.</p>
         </div>
-        <div class="card process-card" data-delay="80">
-          <span class="process-arrow">→</span>
-          <p class="process-num">02</p>
-          <h3>Strategy</h3>
-          <p>Define creative direction, messaging, and channel approach.</p>
+        <div class="card workflow-card" data-delay="80">
+          <span class="workflow-arrow">→</span>
+          <p class="workflow-num">02</p>
+          <h3>Concept &amp; Prompt Direction</h3>
+          <p>I create visual concepts, AI prompts, campaign ideas, moodboards, and creative directions aligned with brand strategy.</p>
         </div>
-        <div class="card process-card" data-delay="160">
-          <span class="process-arrow">→</span>
-          <p class="process-num">03</p>
-          <h3>Concept</h3>
-          <p>Develop visual identity, campaign concepts, and creative assets.</p>
+        <div class="card workflow-card" data-delay="160">
+          <span class="workflow-arrow">→</span>
+          <p class="workflow-num">03</p>
+          <h3>AI Production</h3>
+          <p>I use AI tools to generate design ideas, images, layouts, campaign visuals, content variations, and creative concepts at speed.</p>
         </div>
-        <div class="card process-card" data-delay="240">
-          <span class="process-arrow">→</span>
-          <p class="process-num">04</p>
-          <h3>Production</h3>
-          <p>Execute photography, video, design, and AI-assisted content creation.</p>
+        <div class="card workflow-card" data-delay="240">
+          <span class="workflow-arrow">→</span>
+          <p class="workflow-num">04</p>
+          <h3>Manual Refinement</h3>
+          <p>I polish and improve every output using design skills, Photoshop, video editing, layout correction, branding, and final creative judgment.</p>
         </div>
-        <div class="card process-card" data-delay="320">
-          <span class="process-arrow" style="display:none;">→</span>
-          <p class="process-num">05</p>
-          <h3>Delivery</h3>
-          <p>Finalize assets, optimize for platforms, and measure impact.</p>
+        <div class="card workflow-card" data-delay="320">
+          <p class="workflow-num">05</p>
+          <h3>Final Delivery</h3>
+          <p>I prepare final assets for social media, e-commerce stores, ads, websites, reels, campaigns, and brand presentations.</p>
+        </div>
+      </div>
+      <div class="workflow-statement">
+        <p><strong>I do not just use AI.</strong> I direct AI with creative strategy, design understanding, and brand-focused thinking. Every output is guided by my creative judgment and communication expertise.</p>
+      </div>
+    </div>
+
+    <!-- CASE STUDIES -->
+    <div class="bento" id="case-studies">
+      <div style="grid-column:span 12;">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-heading">Case Studies</h2>
+        <p class="section-sub">Real brand work combining AI-assisted production with hands-on creative direction and design execution.</p>
+      </div>
+      <div class="case-grid">
+
+        <!-- Case 1: Urban Buck -->
+        <div class="case-card" data-delay="0">
+          <div class="case-header">
+            <div class="case-brand-row">
+              <span class="case-brand">Urban Buck</span>
+              <span class="case-role">Campaign Lead &amp; Visual Designer</span>
+            </div>
+            <h3 class="case-title">E-Commerce &amp; Social Campaign Visuals</h3>
+            <p class="case-desc">End-to-end campaign visuals for a premium men's lifestyle brand on Amazon and social media — from store banners and product photography to influencer collaborations and paid ad creatives.</p>
+          </div>
+          <div class="case-specs">
+            <div class="case-spec">
+              <p class="case-spec-label">Project Goal</p>
+              <p class="case-spec-value">Build brand identity through consistent visual storytelling across Amazon, Instagram, and paid channels.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">AI + Manual Workflow</p>
+              <p class="case-spec-value">AI-generated campaign concepts and variations → manual refinement in Photoshop → brand-aligned final delivery.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">My Role</p>
+              <p class="case-spec-value">Creative direction, photography direction, banner design, ad creatives, content strategy, and brand communication.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">Result</p>
+              <p class="case-spec-value">50+ creative assets delivered across 5 campaigns, driving Amazon storefront engagement and social media growth.</p>
+            </div>
+          </div>
+          <div class="case-footer">
+            <a href="urban-buck.html" class="btn btn-primary btn-sm">View Work Samples →</a>
+            <a href="https://urbanbuck.pk/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Website</a>
+            <span class="tag">E-Commerce</span>
+            <span class="tag">Brand Campaign</span>
+            <span class="tag">AI-Assisted</span>
+          </div>
+        </div>
+
+        <!-- Case 2: RUMI -->
+        <div class="case-card" data-delay="100">
+          <div class="case-header">
+            <div class="case-brand-row">
+              <span class="case-brand">RUMI</span>
+              <span class="case-role">Creative Designer &amp; AI Visual Lead</span>
+            </div>
+            <h3 class="case-title">Luxury AI-Assisted Campaign Visuals</h3>
+            <p class="case-desc">Luxury brand campaigns including Father's Day, editorial shoots, and product visuals — blending AI-generated concepts with premium editorial photography and design.</p>
+          </div>
+          <div class="case-specs">
+            <div class="case-spec">
+              <p class="case-spec-label">Project Goal</p>
+              <p class="case-spec-value">Create luxury-aligned campaign visuals that feel editorial, premium, and culturally relevant for the Pakistani luxury market.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">AI + Manual Workflow</p>
+              <p class="case-spec-value">AI moodboard and concept generation → editorial photography direction → manual retouching and layout in Photoshop.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">My Role</p>
+              <p class="case-spec-value">Campaign concept development, AI visual direction, editorial design, social media assets, and paid ad creatives.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">Result</p>
+              <p class="case-spec-value">Multi-channel campaign assets delivered for Father's Day and editorial seasons, strengthening RUMI's luxury brand positioning.</p>
+            </div>
+          </div>
+          <div class="case-footer">
+            <a href="http://rumi.com.pk/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Website</a>
+            <a href="https://www.instagram.com/styledbyrumi" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Instagram</a>
+            <span class="tag">Luxury</span>
+            <span class="tag">Campaign</span>
+            <span class="tag">Editorial</span>
+          </div>
+        </div>
+
+        <!-- Case 3: Vircanor -->
+        <div class="case-card" data-delay="200">
+          <div class="case-header">
+            <div class="case-brand-row">
+              <span class="case-brand">Vircanor</span>
+              <span class="case-role">AI Visual Assistant &amp; Creative Designer</span>
+            </div>
+            <h3 class="case-title">AI Visual Assistant Work</h3>
+            <p class="case-desc">Supporting luxury branding and creative campaigns through AI-assisted visual production, content creation, and creative storytelling for international brand campaigns.</p>
+          </div>
+          <div class="case-specs">
+            <div class="case-spec">
+              <p class="case-spec-label">Project Goal</p>
+              <p class="case-spec-value">Deliver high-volume, high-quality visual content for luxury brand campaigns using AI acceleration.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">AI + Manual Workflow</p>
+              <p class="case-spec-value">AI concept generation and visual prototyping → manual refinement and brand alignment → final asset delivery.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">My Role</p>
+              <p class="case-spec-value">AI-generated visuals, campaign concepts, social media content, reels, paid ad creatives, and creative storytelling.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">Result</p>
+              <p class="case-spec-value">Consistent creative output across multiple campaigns, reducing production time while maintaining premium quality.</p>
+            </div>
+          </div>
+          <div class="case-footer">
+            <a href="https://vircanor.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Website</a>
+            <span class="tag">AI Production</span>
+            <span class="tag">Luxury</span>
+            <span class="tag">Content</span>
+          </div>
+        </div>
+
+        <!-- Case 4: Titans Corporation -->
+        <div class="case-card" data-delay="300">
+          <div class="case-header">
+            <div class="case-brand-row">
+              <span class="case-brand">Titans Corporation</span>
+              <span class="case-role">Senior Executive — Media &amp; Graphics</span>
+            </div>
+            <h3 class="case-title">Brand &amp; Media Design Leadership</h3>
+            <p class="case-desc">Leading media and graphics for Urban Buck at Titans Corporation — overseeing social media campaigns, influencer collaborations, photography, studio production, and brand growth.</p>
+          </div>
+          <div class="case-specs">
+            <div class="case-spec">
+              <p class="case-spec-label">Project Goal</p>
+              <p class="case-spec-value">Scale Urban Buck's brand presence across digital channels through strategic creative leadership and consistent visual identity.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">AI + Manual Workflow</p>
+              <p class="case-spec-value">AI-assisted content planning and visual exploration → hands-on creative direction, photography, and design execution.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">My Role</p>
+              <p class="case-spec-value">Team leadership, creative planning, brand communication, influencer coordination, photography direction, and content calendar management.</p>
+            </div>
+            <div class="case-spec">
+              <p class="case-spec-label">Result</p>
+              <p class="case-spec-value">Consistent brand growth through integrated campaigns, with measurable improvements in social engagement and e-commerce presence.</p>
+            </div>
+          </div>
+          <div class="case-footer">
+            <a href="https://titans-corp.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Website</a>
+            <a href="urban-buck.html" class="btn btn-outline btn-sm">View Urban Buck Work</a>
+            <span class="tag">Leadership</span>
+            <span class="tag">Strategy</span>
+            <span class="tag">Brand Growth</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="bento" id="skills">
+      <div style="grid-column:span 12;">
+        <p class="section-label">Expertise</p>
+        <h2 class="section-heading">Skills &amp; Creative Strengths</h2>
+        <p class="section-sub">Thirteen core capabilities that define my approach to AI-powered creative production and brand communication.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="card skill-card" data-delay="0">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3>AI Creative Direction</h3>
+          <p>Directing AI tools with strategic creative intent for brand-aligned outputs.</p>
+        </div>
+        <div class="card skill-card" data-delay="50">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg></div>
+          <h3>Prompt Engineering</h3>
+          <p>Crafting precise prompts for consistent, brand-ready AI visual outputs.</p>
+        </div>
+        <div class="card skill-card" data-delay="100">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>Graphic Design</h3>
+          <p>Purpose-driven layouts, composition, and visual communication for every medium.</p>
+        </div>
+        <div class="card skill-card" data-delay="150">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+          <h3>Brand Visual Design</h3>
+          <p>Cohesive brand identities and visual systems across all touchpoints.</p>
+        </div>
+        <div class="card skill-card" data-delay="200">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Social Media Campaign Design</h3>
+          <p>Scroll-stopping social visuals optimized for every platform and format.</p>
+        </div>
+        <div class="card skill-card" data-delay="250">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h3>E-Commerce Banner Design</h3>
+          <p>Conversion-focused store banners for Amazon, web stores, and digital campaigns.</p>
+        </div>
+        <div class="card skill-card" data-delay="300">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <h3>Product Image Direction</h3>
+          <p>Art directing product photography that sells — from concept to final retouch.</p>
+        </div>
+        <div class="card skill-card" data-delay="350">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h3>Video Editing</h3>
+          <p>Short-form reels, campaign videos, and brand content edited for impact and reach.</p>
+        </div>
+        <div class="card skill-card" data-delay="400">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg></div>
+          <h3>Content Strategy</h3>
+          <p>Strategic content planning aligned with brand goals, audience insights, and platform trends.</p>
+        </div>
+        <div class="card skill-card" data-delay="450">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg></div>
+          <h3>Photography Direction</h3>
+          <p>Directing product and lifestyle photography with editorial quality and brand consistency.</p>
+        </div>
+        <div class="card skill-card" data-delay="500">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Visual Storytelling</h3>
+          <p>Crafting brand narratives through imagery, design, and cohesive visual language.</p>
+        </div>
+        <div class="card skill-card" data-delay="550">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Ad Creative Design</h3>
+          <p>Performance-driven ad visuals for Meta, Google, and Amazon — balancing brand with conversion.</p>
+        </div>
+        <div class="card skill-card" data-delay="600">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3>Website Visual Design</h3>
+          <p>Modern, conversion-focused web design with premium typography, bento grids, and clean UX.</p>
         </div>
       </div>
     </div>
 
     <!-- TOOLS -->
-    <div class="bento">
-      <div class="card tools-card" data-delay="50">
-        <h2 class="section-heading" style="margin-bottom:8px;">Creative Toolkit</h2>
-        <p style="font-size:16px;color:var(--muted);">The tools I use to bring creative visions to life.</p>
-        <div class="tools-grid">
-          <span class="tool-chip">Adobe Photoshop</span>
-          <span class="tool-chip">Canva</span>
+    <div class="bento" id="tools">
+      <div class="card tools-grid" data-delay="50">
+        <p class="section-label">Toolkit</p>
+        <h2 class="section-heading">Creative Toolkit</h2>
+        <p class="section-sub">The tools I use to combine AI-powered production with hands-on creative execution.</p>
+        <div class="tool-chips">
           <span class="tool-chip">ChatGPT</span>
+          <span class="tool-chip">Open Design AI</span>
+          <span class="tool-chip">OpenCode AI CLI</span>
           <span class="tool-chip">Google AI Studio</span>
           <span class="tool-chip">ImagineArt</span>
           <span class="tool-chip">Higgsfield</span>
-          <span class="tool-chip">Filmora</span>
+          <span class="tool-chip">Adobe Photoshop</span>
           <span class="tool-chip">CapCut</span>
+          <span class="tool-chip">Filmora</span>
+          <span class="tool-chip">Canva</span>
         </div>
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL PROOF -->
+    <div class="bento">
+      <div class="card proof-card" data-delay="50">
+        <p class="section-label">Proof</p>
+        <h2 class="section-heading">Built With AI, Directed With Creative Skill</h2>
+        <p class="proof-desc">
+          This portfolio was created using AI-powered design and code tools, including <strong>Open Design AI</strong> and <strong>OpenCode AI CLI</strong>. The purpose is to show how I use modern AI tools to create, structure, and present professional creative work faster and smarter. Every section is guided by my own creative judgment, design understanding, and brand communication experience — proving that <strong>I don't just use AI, I direct it</strong>.
+        </p>
       </div>
     </div>
 
     <!-- CONTACT -->
     <div class="bento" id="contact">
       <div class="card contact-card" data-delay="50">
-        <h2 class="section-heading">Let's Build Something Meaningful.</h2>
-        <p class="contact-desc">Whether you're building a brand, launching a campaign, or looking for creative support, I'd love to collaborate.</p>
+        <p class="section-label" style="justify-content:center;">Contact</p>
+        <h2 class="section-heading">Let's Work Together</h2>
+        <p class="contact-desc">Available for AI-assisted creative design, brand campaigns, social media visuals, e-commerce content, video concepts, and marketing design projects.</p>
         <div class="contact-links">
+          <a href="mailto:daniameen741@gmail.com" class="contact-btn highlight">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Me
+          </a>
           <a href="https://www.linkedin.com/in/danish-ibn-e-ameen-multitalentasks" target="_blank" rel="noopener" class="contact-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
-          <a href="mailto:daniameen741@gmail.com" class="contact-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            Email
+          <a href="https://github.com/daniameen741-hue" target="_blank" rel="noopener" class="contact-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
           </a>
           <a href="https://wa.me/+923102589166" target="_blank" rel="noopener" class="contact-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             WhatsApp
-          </a>
-          <a href="https://www.instagram.com/lifeof.danish/" target="_blank" rel="noopener" class="contact-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
-            Instagram
           </a>
         </div>
       </div>
@@ -1112,15 +1366,15 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Danish Ibn-E-Ameen. All rights reserved.</p>
+    <p>© 2026 Danish Ibn-E-Ameen — AI Creative Designer &amp; Marketing Visual Specialist</p>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/danish-ibn-e-ameen-multitalentasks" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.instagram.com/lifeof.danish/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://github.com/daniameen741-hue" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:daniameen741@gmail.com">Email</a>
     </div>
   </footer>
 
-  <!-- Scroll reveal + nav interactions -->
   <script>
     (function() {
       // Mobile nav toggle
@@ -1146,7 +1400,7 @@
         }
       });
       function updateActive() {
-        var scrollY = window.scrollY + 120;
+        var scrollY = window.scrollY + 140;
         var current = null;
         sections.forEach(function(s) {
           var top = s.el.offsetTop;
@@ -1159,8 +1413,8 @@
       window.addEventListener('scroll', updateActive);
       updateActive();
 
-      // Scroll reveal
-      var revealEls = document.querySelectorAll('.card, .project-card, .process-card, .expertise-card');
+      // Scroll reveal with IntersectionObserver
+      var revealEls = document.querySelectorAll('.card, .case-card, .workflow-card, .skill-card, .side-card, .about-stat');
       var observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
@@ -1174,7 +1428,7 @@
       }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
       revealEls.forEach(function(el) { observer.observe(el); });
 
-      // Smooth reveal for visible-at-load cards
+      // Visible-at-load cards
       setTimeout(function() {
         document.querySelectorAll('.card.reveal:not(.visible)').forEach(function(el) {
           var rect = el.getBoundingClientRect();
@@ -1184,9 +1438,19 @@
           }
         });
       }, 200);
+
+      // Smooth scroll for nav links
+      document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+          var target = document.getElementById(this.getAttribute('href').slice(1));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
     })();
   </script>
 
-
-
-</body></html>
+</body>
+</html>

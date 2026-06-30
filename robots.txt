@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daniameen741-hue.github.io/portfolio/sitemap.xml
