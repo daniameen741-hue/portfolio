@@ -37,6 +37,14 @@
         "Video Editing",
         "Prompt Engineering"
       ],
+      "affiliation": {
+        "@type": "Organization",
+        "name": "The Citizens Foundation"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "The Citizens Foundation School"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/danish-ibn-e-ameen-multitalentasks",
         "https://www.instagram.com/lifeof.danish/"
@@ -513,6 +521,139 @@
       text-transform: uppercase;
     }
 
+    /* ---- Community Leadership ---- */
+    .community-card {
+      grid-column: span 12;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 40px;
+      padding: 48px;
+    }
+    .community-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .community-logo-wrap {
+      width: 100%;
+      max-width: 240px;
+      padding: 24px;
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .community-logo-wrap img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .community-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .community-label::before {
+      content: '';
+      width: 14px;
+      height: 1.5px;
+      background: var(--accent);
+      display: block;
+    }
+    .community-role-badge {
+      display: inline-flex;
+      padding: 8px 18px;
+      background: color-mix(in srgb, #2d8a4e 8%, transparent);
+      border: 1px solid color-mix(in srgb, #2d8a4e 18%, transparent);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #2d8a4e;
+      letter-spacing: 0.01em;
+    }
+    .community-year-badge {
+      display: inline-flex;
+      padding: 6px 16px;
+      background: var(--surface-hover);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+    .community-right h2 {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 2.6vw, 36px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: var(--fg);
+      margin-bottom: 16px;
+    }
+    .community-intro {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--fg);
+      margin-bottom: 16px;
+      font-weight: 450;
+    }
+    .community-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .community-sub-title {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--fg);
+      margin-bottom: 14px;
+    }
+    .community-points {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .community-point {
+      padding: 16px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+    }
+    .community-point h4 {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+    .community-point p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+    .community-role-stmt {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--muted);
+      padding: 16px 20px;
+      background: color-mix(in srgb, var(--accent) 5%, transparent);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent);
+    }
+
     /* ---- AI Workflow ---- */
     .workflow-grid {
       grid-column: span 12;
@@ -860,6 +1001,9 @@
       .side-row .side-card:last-child { grid-column: span 2; }
       .about-grid { grid-template-columns: 1fr; }
       .about-stats { grid-column: 1; grid-template-columns: repeat(3, 1fr); }
+      .community-card { grid-template-columns: 1fr; gap: 24px; padding: 32px; }
+      .community-left { align-items: center; text-align: center; }
+      .community-label { justify-content: center; }
       .case-grid { grid-template-columns: 1fr; }
       .skills-grid { grid-template-columns: repeat(3, 1fr); }
       .workflow-grid { grid-template-columns: repeat(3, 1fr); }
@@ -895,6 +1039,7 @@
       .skills-grid { grid-template-columns: repeat(2, 1fr); }
       .case-specs { grid-template-columns: 1fr; }
       .contact-card { padding: 40px 24px; }
+      .community-card { padding: 24px; }
       .proof-card { padding: 40px 24px; }
       .workflow-grid { grid-template-columns: repeat(2, 1fr); }
       .workflow-grid .workflow-card:nth-child(2) .workflow-arrow,
@@ -1029,6 +1174,38 @@
         <div class="about-stat">
           <p class="about-stat-num">10+</p>
           <p class="about-stat-label">AI Tools Used</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMUNITY LEADERSHIP -->
+    <div class="bento" id="community">
+      <div class="card community-card" data-delay="50">
+        <div class="community-left">
+          <div class="community-logo-wrap">
+            <img src="mrmeddfu-images.png" alt="The Citizens Foundation TCF logo" width="240" height="auto" loading="lazy">
+          </div>
+          <span class="community-label">Education · Mentorship · Community</span>
+          <span class="community-role-badge">TCF Alumni Pathways Ambassador</span>
+          <span class="community-year-badge">2025–2026</span>
+        </div>
+        <div class="community-right">
+          <p class="section-label" style="margin-top:0;">Impact</p>
+          <h2>Community Leadership &amp; Social Impact</h2>
+          <p class="community-intro">Proud graduate of The Citizens Foundation (TCF) School and currently serving as a TCF Alumni Pathways Ambassador, supporting students through mentorship, career guidance, and educational awareness initiatives.</p>
+          <p class="community-desc">The TCF Alumni Pathways Programme connects graduates with university admissions, scholarships, vocational training, and career mentorship. Through strategic partnerships with leading institutions, TCF helps reduce socioeconomic barriers by providing financial aid, test preparation, and job placement support across Pakistan.</p>
+          <p class="community-sub-title">How the programme supports students</p>
+          <div class="community-points">
+            <div class="community-point">
+              <h4>University Partnerships</h4>
+              <p>TCF has established Memorandums of Understanding with leading local universities, including IBA, IoBM, SZABIST, and the University of Karachi, to support admissions and provide need-based scholarships for TCF alumni.</p>
+            </div>
+            <div class="community-point">
+              <h4>Alumni Development Programme</h4>
+              <p>Started in 2015, the Alumni Development Programme connects TCF alumni with university volunteers from institutions such as LUMS, NUST, and IBA, who help students prepare for competitive university entrance examinations.</p>
+            </div>
+          </div>
+          <p class="community-role-stmt">As a TCF Alumni Pathways Ambassador for 2025 and 2026, I contribute to student awareness, guidance, mentorship, and access to higher-education and career opportunities.</p>
         </div>
       </div>
     </div>
