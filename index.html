@@ -89,6 +89,15 @@
       overflow-x: hidden;
       transition: background var(--transition), color var(--transition);
     }
+    .skip-link {
+      position: absolute; top: -100%; left: 16px;
+      background: var(--accent); color: #fff;
+      padding: 8px 16px; border-radius: 6px;
+      font-size: 14px; font-weight: 600; z-index: 9999;
+      text-decoration: none; transition: top 0.2s ease;
+    }
+    .skip-link:focus { top: 16px; }
+    }
 
     ::selection { background: var(--accent); color: #fff; }
 
@@ -1186,10 +1195,16 @@
       .skills-grid { grid-template-columns: 1fr; }
       .workflow-grid { grid-template-columns: 1fr; }
       .workflow-arrow { display: none !important; }
+      .infinity-section { padding: 0; }
+      .infinity-detail-grid { gap: 16px; }
+      .project-media--16-10 img { border-radius: 12px; }
     }
   </style>
 </head>
 <body>
+
+  <!-- Skip to Content -->
+  <a href="#case-studies" class="skip-link">Skip to Content</a>
 
   <!-- Navigation -->
   <nav>
@@ -1440,6 +1455,11 @@
     <!-- INFINITY COLLECTION — PROJECT DETAIL -->
     <div class="bento" id="infinity-detail">
       <div class="infinity-section">
+
+        <!-- Exit Navigation -->
+        <div style="margin-bottom:24px;">
+          <a href="#case-studies" class="btn btn-outline btn-sm" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;text-decoration:none;">← Back to Case Studies</a>
+        </div>
 
         <!-- Project Header -->
         <div style="margin-bottom:32px;">
@@ -2125,6 +2145,11 @@
         <div class="infinity-outcome">
           <h3>Final Outcome</h3>
           <p>The completed presentation establishes a consistent visual system for the StormFit Compression T-Shirt across technical, model-based, and colorway-focused imagery. The final assets communicate the garment's compression silhouette, performance fit, versatility, and commercial positioning for Urban Buck's Infinity Collection launch.</p>
+        </div>
+
+        <!-- Exit Navigation Bottom -->
+        <div style="margin-top:32px;text-align:center;">
+          <a href="#case-studies" class="btn btn-outline btn-sm" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;text-decoration:none;">← Back to Case Studies</a>
         </div>
 
       </div>
