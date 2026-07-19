@@ -973,6 +973,137 @@
       display: block;
     }
 
+    /* ---- Project Media (16:9 + 16:10) ---- */
+    .project-media {
+      width: 100%;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #f3f3f3;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .project-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .project-media--16-9 { aspect-ratio: 16 / 9; }
+    .project-media--16-10 { aspect-ratio: 16 / 10; }
+    .project-media figcaption {
+      padding: 14px 20px;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* ---- Infinity Collection Project ---- */
+    .infinity-section { grid-column: span 12; }
+    .infinity-section .case-brand { font-size: 11px; }
+    .infinity-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .infinity-meta-item {
+      padding: 20px;
+      background: var(--surface-hover);
+      border-radius: var(--radius-sm);
+    }
+    .infinity-meta-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .infinity-meta-value {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--fg);
+      line-height: 1.4;
+    }
+    .infinity-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+    .infinity-detail-grid h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      color: var(--fg);
+    }
+    .infinity-detail-grid p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .infinity-contribution-list {
+      list-style: none;
+      padding: 0;
+    }
+    .infinity-contribution-list li {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+      padding: 8px 0 8px 20px;
+      position: relative;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .infinity-contribution-list li:last-child { border-bottom: none; }
+    .infinity-contribution-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .infinity-outcome {
+      padding: 32px;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 4%, transparent) 0%, color-mix(in srgb, var(--accent) 8%, transparent) 100%);
+      border-radius: var(--radius);
+      border: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
+      margin-bottom: 32px;
+    }
+    .infinity-outcome h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      color: var(--fg);
+    }
+    .infinity-outcome p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+    .infinity-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .infinity-tags .tag {
+      padding: 6px 16px;
+      font-size: 12px;
+    }
+    .project-colorway-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
     /* ---- Scroll animations ---- */
     .reveal {
       opacity: 0;
@@ -1001,6 +1132,8 @@
       .skills-grid { grid-template-columns: repeat(3, 1fr); }
       .workflow-grid { grid-template-columns: repeat(3, 1fr); }
       .workflow-grid .workflow-card:nth-child(3) .workflow-arrow { display: none; }
+      .infinity-meta-grid { grid-template-columns: repeat(2, 1fr); }
+      .infinity-detail-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 768px) {
@@ -1037,6 +1170,8 @@
       .workflow-grid { grid-template-columns: repeat(2, 1fr); }
       .workflow-grid .workflow-card:nth-child(2) .workflow-arrow,
       .workflow-grid .workflow-card:nth-child(4) .workflow-arrow { display: none; }
+      .infinity-meta-grid { grid-template-columns: 1fr; }
+      .project-colorway-grid { grid-template-columns: 1fr; gap: 18px; }
       footer { flex-direction: column; text-align: center; }
     }
 
@@ -1245,6 +1380,21 @@
       </div>
       <div class="case-grid">
 
+        <!-- Infinity Collection (Apparel Design) -->
+        <div class="case-card" data-delay="0" id="infinity-card">
+          <div class="project-media project-media--16-10" style="border-radius:0;">
+            <img src="./assets/images/infinity-collection/vera-product-development-banner.jpg" alt="Urban Buck Infinity Collection Vera Diamond Crop Top apparel design and product development presentation" width="1920" height="1200" loading="lazy">
+          </div>
+          <div class="case-header">
+            <span class="case-brand" style="color:#8B3A5E;">Apparel Design / Product Development</span>
+            <h3 class="case-title">Urban Buck — Infinity Collection</h3>
+            <p class="case-desc">Garment concept development, colorway presentation, technical visualization, and launch-ready creative assets for Urban Buck's Infinity Collection.</p>
+          </div>
+          <div class="case-footer" style="padding:0 32px 28px;">
+            <a href="#infinity-detail" class="btn btn-primary btn-sm">View Project →</a>
+          </div>
+        </div>
+
         <!-- Urban Buck -->
         <div class="case-card" data-delay="0">
           <div class="case-header">
@@ -1279,6 +1429,109 @@
           <div class="case-footer" style="padding:0 32px 28px;">
             <a href="https://titans-corp.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Case Study →</a>
           </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- INFINITY COLLECTION — PROJECT DETAIL -->
+    <div class="bento" id="infinity-detail">
+      <div class="infinity-section">
+
+        <!-- Project Header -->
+        <div style="margin-bottom:32px;">
+          <p class="section-label" style="margin-top:0;">Apparel Design / Product Development</p>
+          <h2 class="section-heading">Urban Buck — Infinity Collection</h2>
+          <p class="section-sub" style="margin-bottom:20px;">Apparel design and product-development work for Urban Buck's Infinity Collection, covering garment concept development, silhouette refinement, colorway presentation, technical visualization, and launch-ready product imagery.</p>
+          <div class="infinity-tags">
+            <span class="tag">Apparel Design</span>
+            <span class="tag">Product Development</span>
+            <span class="tag">Colorway Development</span>
+            <span class="tag">Technical Visualization</span>
+            <span class="tag">E-Commerce Creative</span>
+          </div>
+        </div>
+
+        <!-- Technical Banner -->
+        <figure class="project-media project-media--16-10" style="margin-bottom:32px;">
+          <img src="./assets/images/infinity-collection/vera-product-development-banner.jpg" alt="Urban Buck Infinity Collection Vera Diamond Crop Top apparel design and product development presentation" width="1920" height="1200" loading="lazy">
+          <figcaption>Vera Diamond Crop Top — concept, silhouette, fit, fabric, and colorway presentation.</figcaption>
+        </figure>
+
+        <!-- Product Details + My Contribution -->
+        <div class="infinity-detail-grid">
+
+          <!-- Product Details -->
+          <div>
+            <h3>Product Details</h3>
+            <div class="infinity-meta-grid" style="margin-bottom:0;">
+              <div class="infinity-meta-item">
+                <p class="infinity-meta-label">Product</p>
+                <p class="infinity-meta-value">Vera Diamond Crop Top</p>
+              </div>
+              <div class="infinity-meta-item">
+                <p class="infinity-meta-label">Garment Type</p>
+                <p class="infinity-meta-value">Women's full-sleeve crop top</p>
+              </div>
+              <div class="infinity-meta-item">
+                <p class="infinity-meta-label">Fit</p>
+                <p class="infinity-meta-value">Slightly slim</p>
+              </div>
+              <div class="infinity-meta-item">
+                <p class="infinity-meta-label">Fabric</p>
+                <p class="infinity-meta-value">90% Polyester / 10% Spandex</p>
+              </div>
+              <div class="infinity-meta-item">
+                <p class="infinity-meta-label">Colorways</p>
+                <p class="infinity-meta-value">Raspberry Wine and Charcoal Grey</p>
+              </div>
+              <div class="infinity-meta-item">
+                <p class="infinity-meta-label">Use Cases</p>
+                <p class="infinity-meta-value">Gym, casual wear, and everyday styling</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Contribution -->
+          <div>
+            <h3>My Contribution</h3>
+            <ul class="infinity-contribution-list">
+              <li>Developed the apparel concept and product presentation</li>
+              <li>Refined the garment silhouette and diamond-shaped front hem</li>
+              <li>Presented front, side, back, and construction-focused views</li>
+              <li>Developed Raspberry Wine and Charcoal Grey colorway visuals</li>
+              <li>Created model-based product presentation images</li>
+              <li>Designed a technical launch banner</li>
+              <li>Prepared portfolio and e-commerce-ready creative assets</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Project Description -->
+        <div style="margin-bottom:40px;">
+          <p style="font-size:15px;line-height:1.7;color:var(--muted);max-width:70ch;">The Vera Diamond Crop Top was developed as a versatile women's full-sleeve essential for gym, casual, and everyday styling. The project focused on maintaining a clean silhouette, distinctive diamond-shaped front hem, wide boat neckline, slightly slim fit, and consistent visual presentation across both colorways.</p>
+        </div>
+
+        <!-- Colorway Development -->
+        <div style="margin-bottom:40px;">
+          <h3 style="font-family:var(--font-display);font-size:18px;font-weight:600;letter-spacing:-0.01em;margin-bottom:16px;">Colorway Development</h3>
+          <div class="project-colorway-grid">
+            <figure class="project-media project-media--16-10">
+              <img src="./assets/images/infinity-collection/vera-charcoal-grey.jpg" alt="Vera Diamond Crop Top in Charcoal Grey showing front, back, and side construction views" width="1920" height="1200" loading="lazy">
+              <figcaption>Charcoal Grey — front, back, and construction-detail presentation.</figcaption>
+            </figure>
+            <figure class="project-media project-media--16-10">
+              <img src="./assets/images/infinity-collection/vera-raspberry-wine.jpg" alt="Vera Diamond Crop Top in Raspberry Wine showing front, back, and side construction views" width="1920" height="1200" loading="lazy">
+              <figcaption>Raspberry Wine — front, back, and construction-detail presentation.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Final Outcome -->
+        <div class="infinity-outcome">
+          <h3>Final Outcome</h3>
+          <p>The completed presentation establishes a consistent visual system for the Vera Diamond Crop Top across technical, model-based, and colorway-focused imagery. The final assets communicate the garment's silhouette, fit, versatility, and commercial positioning for Urban Buck's Infinity Collection launch.</p>
         </div>
 
       </div>
