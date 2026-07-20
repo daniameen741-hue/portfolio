@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Danish Ibn-E-Ameen | AI Creative Designer &amp; Marketing Visual Specialist</title>
-  <meta name="description" content="Danish Ibn-E-Ameen is an AI Creative Designer and Marketing Visual Specialist creating brand campaigns, social media visuals, e-commerce banners, AI-assisted content, photography, video concepts, and digital marketing assets.">
-  <meta name="keywords" content="Danish Ibn-E-Ameen, AI Creative Designer, AI Marketing Designer, AI Visual Designer, Creative Designer Pakistan, Graphic Designer, Video Editor, Brand Campaign Designer, E-Commerce Visual Designer, Social Media Designer, Prompt Engineering, AI Creative Production">
+  <title>Danish Ibn-E-Ameen | Creative Designer — Brand, Apparel &amp; AI Visuals</title>
+  <meta name="description" content="Danish Ibn-E-Ameen is a Creative Designer specializing in brand visual design, apparel and product design, AI-assisted creative production, photography, e-commerce visuals, and social media campaigns.">
+  <meta name="keywords" content="Danish Ibn-E-Ameen, Creative Designer, Brand Visual Design, Apparel Design, Product Design, AI Creative Production, E-Commerce Visual Designer, Social Media Designer, Photography, Prompt Engineering">
   <meta name="author" content="Danish Ibn-E-Ameen">
-  <meta property="og:title" content="Danish Ibn-E-Ameen | AI Creative Designer &amp; Marketing Visual Specialist">
-  <meta property="og:description" content="AI Creative Designer combining design, photography, video editing, marketing strategy, and AI tools to build modern brand campaigns.">
+  <meta property="og:title" content="Danish Ibn-E-Ameen | Creative Designer — Brand, Apparel &amp; AI Visuals">
+  <meta property="og:description" content="Creative Designer combining brand visual design, apparel design, AI-assisted production, photography, and commercial creative execution.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://daniameen741-hue.github.io/portfolio/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Danish Ibn-E-Ameen | AI Creative Designer &amp; Marketing Visual Specialist">
-  <meta name="twitter:description" content="AI Creative Designer for Brand Campaigns, E-Commerce Visuals &amp; Social Content">
+  <meta name="twitter:title" content="Danish Ibn-E-Ameen | Creative Designer — Brand, Apparel &amp; AI Visuals">
+  <meta name="twitter:description" content="Creative Designer for Brand Campaigns, Apparel Design &amp; AI Visuals">
   <link rel="canonical" href="https://daniameen741-hue.github.io/portfolio/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,17 +25,17 @@
     "mainEntity": {
       "@type": "Person",
       "name": "Danish Ibn-E-Ameen",
-      "jobTitle": "AI Creative Designer and Marketing Visual Specialist",
-      "description": "AI Creative Designer creating brand campaigns, e-commerce visuals, social media content, photography, video edits, and AI-assisted creative assets. TCF Alumni Pathways Ambassador (2025–2026) supporting student mentorship and educational access.",
+      "jobTitle": "Creative Designer",
+      "description": "Creative Designer specializing in brand visual design, apparel and product design, AI-assisted creative production, e-commerce visuals, and marketing content. TCF Alumni Pathways Ambassador (2025–2026) supporting student mentorship and educational access.",
       "knowsAbout": [
-        "AI Creative Production",
-        "Brand Communication",
-        "Visual Design",
-        "Social Media Campaigns",
-        "E-Commerce Banners",
-        "Photography",
-        "Video Editing",
-        "Prompt Engineering"
+        "Brand Visual Design",
+        "Apparel & Product Design",
+        "AI Creative Direction",
+        "E-Commerce Visual Design",
+        "Product Photography",
+        "Social Media Content",
+        "Prompt Engineering",
+        "Creative Direction"
       ],
       "affiliation": {
         "@type": "Organization",
@@ -70,6 +70,7 @@
       --nav-bg: rgba(248, 249, 250, 0.85);
       --surface-hover: rgba(0, 0, 0, 0.04);
       --border-subtle: rgba(0, 0, 0, 0.05);
+      --border: rgba(0, 0, 0, 0.08);
       --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
       --font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
       --nav-height: 72px;
@@ -97,7 +98,6 @@
       text-decoration: none; transition: top 0.2s ease;
     }
     .skip-link:focus { top: 16px; }
-    }
 
     ::selection { background: var(--accent); color: #fff; }
 
@@ -162,6 +162,8 @@
     }
     .nav-links a:hover { color: var(--fg); }
     .nav-links a:hover::after { width: 100%; }
+    .nav-links a.active { color: var(--fg); }
+    .nav-links a.active::after { width: 100%; }
     .nav-cta {
       display: inline-flex;
       align-items: center;
@@ -1199,6 +1201,30 @@
       .infinity-detail-grid { gap: 16px; }
       .project-media--16-10 img { border-radius: 12px; }
     }
+
+    @media (max-width: 375px) {
+      main { padding: calc(var(--nav-height) + 16px) 12px 48px; }
+      .card { padding: 20px; }
+      .hero-name { font-size: 28px; }
+      .hero-headline { font-size: 14px; }
+      .hero-visual-inner { min-height: 180px; }
+      .section-heading { font-size: 22px; }
+      .about-stats { grid-template-columns: 1fr; gap: 12px; }
+      .contact-card { padding: 28px 16px; }
+      .contact-links { flex-direction: column; }
+      .contact-btn { justify-content: center; }
+      .proof-card { padding: 28px 16px; }
+      .community-card { padding: 20px; }
+    }
+
+    @media (max-width: 320px) {
+      main { padding: calc(var(--nav-height) + 12px) 10px 40px; }
+      .card { padding: 16px; }
+      .hero-name { font-size: 24px; }
+      .hero-headline { font-size: 13px; }
+      .section-heading { font-size: 20px; }
+      .section-sub { font-size: 14px; }
+    }
   </style>
 </head>
 <body>
@@ -1215,11 +1241,9 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#ai-workflow">AI Workflow</a></li>
-      <li><a href="#case-studies">Case Studies</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#tools">Tools</a></li>
-      <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+      <li><a href="#case-studies">Work</a></li>
+      <li><a href="#skills">Capabilities</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -1234,17 +1258,13 @@
         <div class="hero-badge-row">
           <span class="hero-badge"><span class="hero-badge-dot"></span> Available for projects</span>
         </div>
-        <p class="hero-title">AI Creative Designer &amp; Marketing Visual Specialist</p>
+        <p class="hero-title">Creative Designer — Brand, Apparel &amp; AI Visuals</p>
         <h1 class="hero-name">Danish Ibn-E-Ameen</h1>
-        <p class="hero-headline">AI Creative Designer for Brand Campaigns, E-Commerce Visuals &amp; Social Content</p>
-        <p class="hero-desc">I combine design, photography, video editing, marketing strategy, and AI tools to create high-impact visuals for modern brands.</p>
+        <p class="hero-headline">Designing brand campaigns, apparel products, and AI-assisted creative content for modern brands.</p>
+        <p class="hero-desc">I combine visual design, product development, photography, and AI tools to create high-impact creative work across brand, e-commerce, and social platforms.</p>
         <div class="hero-actions">
-          <a href="#ai-workflow" class="btn btn-primary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            View AI Work
-          </a>
-          <a href="#case-studies" class="btn btn-outline">View Brand Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="#case-studies" class="btn btn-primary">Explore Work →</a>
+          <a href="#contact" class="btn btn-outline">Contact</a>
         </div>
         <div class="hero-brand-logos">
           <span class="hero-brand-logos-label">Working with</span>
@@ -1257,7 +1277,7 @@
       <div class="card hero-visual" data-delay="100">
         <div class="hero-visual-inner">
           <div class="hero-visual-accent"></div>
-          <img src="mqvaehbb-ChatGPT-Image-Jun-26_-2026_-11_02_41-PM.png" alt="Danish Ibn-E-Ameen — AI Creative Designer and Marketing Visual Specialist" loading="eager">
+          <img src="mqvaehbb-ChatGPT-Image-Jun-26_-2026_-11_02_41-PM.png" alt="Danish Ibn-E-Ameen — Creative Designer" loading="eager">
         </div>
       </div>
     </div>
@@ -1297,11 +1317,10 @@
     <div class="about-grid" id="about">
       <div class="card about-text" data-delay="50">
         <p class="section-label" style="margin-top:0;">About</p>
-        <h2 class="section-heading">Designing Creative Experiences That Help Brands Grow.</h2>
+        <h2 class="section-heading">Creative Designer combining visual thinking, technology, and commercial execution.</h2>
         <div class="about-body">
-          <p>I am a creative designer and visual content creator who works with AI-powered tools and traditional design skills. I create content for brands, e-commerce, social media, ads, product campaigns, and digital platforms.</p>
-          <p>I use AI to speed up creative production, generate concepts, improve visual direction, and build better campaign ideas — combined with my own skills in design, editing, branding, layout, content planning, and marketing execution.</p>
-          <p>Currently working as Senior Executive – Media &amp; Graphics at <strong><a href="https://titans-corp.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Titans Corporation</a></strong> (contributing to <strong><a href="urban-buck.html" style="color:var(--accent);text-decoration:none;">Urban Buck</a></strong>'s creative growth), and remotely as an AI Visual Assistant and Creative Designer at <strong><a href="https://vircanor.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Vircanor</a></strong>, contributing to luxury branding and creative campaigns for <strong><a href="http://rumi.com.pk/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">RUMI</a></strong>.</p>
+          <p>I work across brand visual design, apparel and product design, AI-assisted creative production, photography, e-commerce visuals, and social media content. My approach blends traditional design skills with AI tools to deliver high-quality creative work at speed.</p>
+          <p>Currently Senior Executive – Media &amp; Graphics at <strong><a href="https://titans-corp.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Titans Corporation</a></strong>, contributing to <strong><a href="urban-buck.html" style="color:var(--accent);text-decoration:none;">Urban Buck</a></strong>'s creative growth. Remote AI Visual Assistant and Creative Designer at <strong><a href="https://vircanor.com/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">Vircanor</a></strong>, supporting luxury branding for <strong><a href="http://rumi.com.pk/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">RUMI</a></strong>.</p>
         </div>
       </div>
       <div class="about-stats" data-delay="100">
@@ -2158,75 +2177,55 @@
     <!-- SKILLS -->
     <div class="bento" id="skills">
       <div style="grid-column:span 12;">
-        <p class="section-label">Expertise</p>
-        <h2 class="section-heading">Skills &amp; Creative Strengths</h2>
-        <p class="section-sub">Thirteen core capabilities that define my approach to AI-powered creative production and brand communication.</p>
+        <p class="section-label">Capabilities</p>
+        <h2 class="section-heading">What I Do</h2>
+        <p class="section-sub">Nine core capabilities that define my approach to creative design and brand execution.</p>
       </div>
       <div class="skills-grid">
         <div class="card skill-card" data-delay="0">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-          <h3>AI Creative Direction</h3>
-          <p>Directing AI tools with strategic creative intent for brand-aligned outputs.</p>
-        </div>
-        <div class="card skill-card" data-delay="50">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg></div>
-          <h3>Prompt Engineering</h3>
-          <p>Crafting precise prompts for consistent, brand-ready AI visual outputs.</p>
-        </div>
-        <div class="card skill-card" data-delay="100">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-          <h3>Graphic Design</h3>
-          <p>Purpose-driven layouts, composition, and visual communication for every medium.</p>
-        </div>
-        <div class="card skill-card" data-delay="150">
           <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
           <h3>Brand Visual Design</h3>
           <p>Cohesive brand identities and visual systems across all touchpoints.</p>
         </div>
+        <div class="card skill-card" data-delay="50">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>Apparel &amp; Product Design</h3>
+          <p>Activewear, sportswear, and casual apparel designed for commercial brands.</p>
+        </div>
+        <div class="card skill-card" data-delay="100">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3>AI Creative Direction</h3>
+          <p>Directing AI tools with strategic creative intent for brand-aligned outputs.</p>
+        </div>
+        <div class="card skill-card" data-delay="150">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg></div>
+          <h3>Prompt Engineering</h3>
+          <p>Crafting precise prompts for consistent, brand-ready AI visual outputs.</p>
+        </div>
         <div class="card skill-card" data-delay="200">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <h3>Social Media Campaign Design</h3>
-          <p>Scroll-stopping social visuals optimized for every platform and format.</p>
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <h3>Product Photography</h3>
+          <p>Art directing product and lifestyle photography with editorial quality.</p>
         </div>
         <div class="card skill-card" data-delay="250">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-          <h3>E-Commerce Banner Design</h3>
-          <p>Conversion-focused store banners for Amazon, web stores, and digital campaigns.</p>
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>E-Commerce Visual Design</h3>
+          <p>Conversion-focused banners, listing images, and store visuals for Amazon and web.</p>
         </div>
         <div class="card skill-card" data-delay="300">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
-          <h3>Product Image Direction</h3>
-          <p>Art directing product photography that sells — from concept to final retouch.</p>
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Social Media Content</h3>
+          <p>Scroll-stopping visuals optimized for every platform and format.</p>
         </div>
         <div class="card skill-card" data-delay="350">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
-          <h3>Video Editing</h3>
-          <p>Short-form reels, campaign videos, and brand content edited for impact and reach.</p>
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>Creative Direction</h3>
+          <p>Leading visual concepts from research through production to final delivery.</p>
         </div>
         <div class="card skill-card" data-delay="400">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg></div>
-          <h3>Content Strategy</h3>
-          <p>Strategic content planning aligned with brand goals, audience insights, and platform trends.</p>
-        </div>
-        <div class="card skill-card" data-delay="450">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg></div>
-          <h3>Photography Direction</h3>
-          <p>Directing product and lifestyle photography with editorial quality and brand consistency.</p>
-        </div>
-        <div class="card skill-card" data-delay="500">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
           <h3>Visual Storytelling</h3>
           <p>Crafting brand narratives through imagery, design, and cohesive visual language.</p>
-        </div>
-        <div class="card skill-card" data-delay="550">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-          <h3>Ad Creative Design</h3>
-          <p>Performance-driven ad visuals for Meta, Google, and Amazon — balancing brand with conversion.</p>
-        </div>
-        <div class="card skill-card" data-delay="600">
-          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-          <h3>Website Visual Design</h3>
-          <p>Modern, conversion-focused web design with premium typography, bento grids, and clean UX.</p>
         </div>
       </div>
     </div>
@@ -2267,8 +2266,8 @@
     <div class="bento" id="contact">
       <div class="card contact-card" data-delay="50">
         <p class="section-label" style="justify-content:center;">Contact</p>
-        <h2 class="section-heading">Let's Work Together</h2>
-        <p class="contact-desc">Available for AI-assisted creative design, brand campaigns, social media visuals, e-commerce content, video concepts, and marketing design projects.</p>
+        <h2 class="section-heading">Get in Touch</h2>
+        <p class="contact-desc">Available for brand design, apparel design, AI-assisted creative production, e-commerce visuals, and marketing projects.</p>
         <div class="contact-links">
           <a href="mailto:daniameen741@gmail.com" class="contact-btn highlight">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -2294,7 +2293,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Danish Ibn-E-Ameen — AI Creative Designer &amp; Marketing Visual Specialist</p>
+    <p>&copy; 2026 Danish Ibn-E-Ameen — Creative Designer</p>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/danish-ibn-e-ameen-multitalentasks" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.instagram.com/lifeof.danish/" target="_blank" rel="noopener">Instagram</a>
