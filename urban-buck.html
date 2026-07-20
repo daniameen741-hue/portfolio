@@ -612,59 +612,66 @@
     }
     footer .social-links a:hover { color: var(--accent); }
 
-    /* ---- New Launches Slider ---- */
-    .new-launches-section { padding: 24px 0 0; }
-    .new-launches-header { display:flex;justify-content:space-between;align-items:center;margin-bottom:24px; }
-    .new-launches-title { font-family:var(--font-display);font-size:20px;font-weight:600;letter-spacing:-0.01em; }
-    .slider-controls { display:flex;gap:8px; }
-    .slider-btn {
-      width:36px;height:36px;border-radius:50%;border:1px solid var(--border-subtle);
-      background:rgba(255,255,255,0.65);backdrop-filter:blur(10px);
-      display:flex;align-items:center;justify-content:center;
-      cursor:pointer;font-size:14px;color:var(--text);transition:all var(--transition);
+    /* ---- Apparel & Product Design Section ---- */
+    .apparel-section { padding: 0; }
+    .apparel-header { margin-bottom: 32px; }
+    .apparel-label {
+      font-family: var(--font-display); font-size: 11px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 8px;
     }
-    .slider-btn:hover { background:var(--text);color:#fff;border-color:var(--text); }
-    .slider-btn:disabled { opacity:0.3;cursor:default; }
-    .new-launches-track {
-      display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;
-      -webkit-overflow-scrolling:touch;scroll-behavior:smooth;
-      padding-bottom:16px;scrollbar-width:none;
+    .apparel-title {
+      font-family: var(--font-display); font-size: 28px; font-weight: 700;
+      letter-spacing: -0.02em; color: var(--fg); margin-bottom: 8px;
     }
-    .new-launches-track::-webkit-scrollbar { display:none; }
-    .new-launch-card {
-      flex:0 0 calc(25% - 15px);min-width:220px;scroll-snap-align:start;
-      border-radius:var(--radius);overflow:hidden;background:var(--card-bg);
-      border:1px solid var(--border-subtle);backdrop-filter:blur(10px);
-      transition:all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);text-decoration:none;color:var(--text);
+    .apparel-sub {
+      font-size: 15px; color: var(--muted); max-width: 50ch;
     }
-    .new-launch-card:hover { transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.1); }
-    .new-launch-card-img { width:100%;aspect-ratio:16/10;object-fit:cover;background:#f5f5f5; }
-    .new-launch-card-body { padding:16px; }
-    .new-launch-card-cat {
-      font-family:var(--font-display);font-size:10px;font-weight:600;letter-spacing:0.08em;
-      text-transform:uppercase;color:var(--accent);margin-bottom:6px;
+    .apparel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
     }
-    .new-launch-card-name {
-      font-family:var(--font-display);font-size:14px;font-weight:600;letter-spacing:-0.01em;
-      line-height:1.3;margin-bottom:12px;
+    .apparel-card {
+      border-radius: var(--radius); overflow: hidden; background: var(--card-bg);
+      border: 1px solid var(--border-subtle); backdrop-filter: blur(10px);
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      text-decoration: none; color: var(--fg); display: flex; flex-direction: column;
     }
-    .new-launch-card-btn {
-      display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.04em;
-      color:var(--text);text-transform:uppercase;
+    .apparel-card:hover {
+      transform: translateY(-4px); box-shadow: var(--shadow-hover);
     }
-    .new-launch-card-btn::after { content:" →"; }
-    @media (max-width:1024px) { .new-launch-card { flex:0 0 calc(33.333% - 14px); } }
-    @media (max-width:768px) {
-      .new-launch-card { flex:0 0 calc(50% - 10px);min-width:160px; }
-      .new-launches-header { flex-direction:column;align-items:flex-start;gap:12px; }
+    .apparel-card-img {
+      width: 100%; aspect-ratio: 16/10; object-fit: contain;
+      background: #f5f5f5; display: block;
     }
-    @media (max-width:480px) {
-      .new-launch-card { flex:0 0 75%; }
-      .new-launches-track { gap:12px; }
+    .apparel-card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .apparel-card-cat {
+      font-family: var(--font-display); font-size: 10px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 6px;
     }
-    @media (max-width:375px) {
-      .new-launch-card { flex:0 0 85%; min-width:180px; }
-      .new-launch-card-name { font-size:13px; }
+    .apparel-card-name {
+      font-family: var(--font-display); font-size: 16px; font-weight: 700;
+      letter-spacing: -0.01em; line-height: 1.3; margin-bottom: 16px;
+    }
+    .apparel-card-btn {
+      margin-top: auto; display: inline-flex; align-items: center; gap: 4px;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+      color: var(--fg); text-transform: uppercase;
+    }
+    .apparel-card-btn::after { content: "→"; transition: transform 0.2s ease; }
+    .apparel-card:hover .apparel-card-btn::after { transform: translateX(4px); }
+    @media (max-width: 1024px) {
+      .apparel-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .apparel-grid { grid-template-columns: 1fr; gap: 20px; }
+      .apparel-title { font-size: 24px; }
+    }
+    @media (max-width: 480px) {
+      .apparel-card-body { padding: 16px; }
+      .apparel-card-name { font-size: 15px; }
     }
 
     /* ---- Scroll animations ---- */
@@ -724,6 +731,7 @@
       <li><a href="index.html#about">About</a></li>
       <li><a href="index.html#ai-workflow">AI Workflow</a></li>
       <li><a href="index.html#case-studies">Case Studies</a></li>
+      <li><a href="#apparel">Apparel</a></li>
       <li><a href="index.html#skills">Skills</a></li>
       <li><a href="index.html#contact" class="nav-cta">Contact Me</a></li>
     </ul>
@@ -911,73 +919,78 @@
       </div>
     </div>
 
-    <!-- NEW LAUNCHES -->
-    <div class="bento">
-      <div class="new-launches-section" data-delay="50">
-        <div class="new-launches-header">
-          <h2 class="new-launches-title">New Launches</h2>
-          <div class="slider-controls">
-            <button class="slider-btn" id="nlPrev" aria-label="Previous">‹</button>
-            <button class="slider-btn" id="nlNext" aria-label="Next">›</button>
-          </div>
+    <!-- APPAREL & PRODUCT DESIGN -->
+    <div class="bento" id="apparel">
+      <div class="apparel-section" data-delay="50">
+        <div class="apparel-header">
+          <p class="apparel-label">Apparel &amp; Product Design</p>
+          <h2 class="apparel-title">Selected apparel and product design work developed for Urban Buck.</h2>
         </div>
-        <div class="new-launches-track" id="nlTrack">
-          <a href="https://urbanbuck.pk/products/eddy-quarter-zip" target="_blank" rel="noopener" class="new-launch-card">
-            <img src="assets/urban-buck/new-launches/eddy-quarter-zip.jpg" alt="Eddy Quarter Zip" class="new-launch-card-img" loading="lazy">
-            <div class="new-launch-card-body">
-              <p class="new-launch-card-cat">Shirts</p>
-              <p class="new-launch-card-name">Eddy Quarter Zip Shirt</p>
-              <span class="new-launch-card-btn">View Live Listing</span>
+        <div class="apparel-grid">
+
+          <a href="https://urbanbuck.pk/collections/all-under-2000/products/eddy-mens-quarter-zip-casual-shirt-for-everyday-wear" target="_blank" rel="noopener noreferrer" class="apparel-card">
+            <img src="assets/urban-buck/new-launches/eddy-quarter-zip.jpg" alt="Eddy Men's Quarter Zip — Apparel Design infographic showing product details and colorways" class="apparel-card-img" loading="lazy" width="1920" height="1200">
+            <div class="apparel-card-body">
+              <p class="apparel-card-cat">Apparel Design / Men's Casualwear</p>
+              <p class="apparel-card-name">Eddy Men's Quarter Zip</p>
+              <span class="apparel-card-btn">View Live Product</span>
             </div>
           </a>
-          <a href="https://urbanbuck.pk/products/vera-diamond-crop-top" target="_blank" rel="noopener" class="new-launch-card">
-            <img src="assets/urban-buck/new-launches/vera-diamond-crop-top.jpg" alt="Vera Diamond Crop Top" class="new-launch-card-img" loading="lazy">
-            <div class="new-launch-card-body">
-              <p class="new-launch-card-cat">Crop Tops</p>
-              <p class="new-launch-card-name">Vera Diamond Crop Top</p>
-              <span class="new-launch-card-btn">View Live Listing</span>
+
+          <a href="https://urbanbuck.pk/collections/all-under-2000/products/vera-diamond-crop-top-shirt-for-women-full-sleeve-style" target="_blank" rel="noopener noreferrer" class="apparel-card">
+            <img src="assets/urban-buck/new-launches/vera-diamond-crop-top.jpg" alt="Vera Diamond Crop Top Shirt — Apparel Design infographic showing product details and colorways" class="apparel-card-img" loading="lazy" width="1920" height="1200">
+            <div class="apparel-card-body">
+              <p class="apparel-card-cat">Apparel Design / Women's Casualwear</p>
+              <p class="apparel-card-name">Vera Diamond Crop Top Shirt</p>
+              <span class="apparel-card-btn">View Live Product</span>
             </div>
           </a>
-          <a href="https://urbanbuck.pk/products/stormfit-compression-t-shirt" target="_blank" rel="noopener" class="new-launch-card">
-            <img src="assets/urban-buck/new-launches/stormfit-compression.jpg" alt="StormFit Compression" class="new-launch-card-img" loading="lazy">
-            <div class="new-launch-card-body">
-              <p class="new-launch-card-cat">Performance</p>
-              <p class="new-launch-card-name">StormFit Compression T-Shirt</p>
-              <span class="new-launch-card-btn">View Live Listing</span>
+
+          <a href="https://urbanbuck.pk/collections/all-under-2000/products/stormfit-full-sleeve-compression-t-shirt-for-gym-and-workout" target="_blank" rel="noopener noreferrer" class="apparel-card">
+            <img src="assets/urban-buck/new-launches/stormfit-compression.jpg" alt="StormFit Compression T-Shirt — Apparel Design infographic showing product details and colorways" class="apparel-card-img" loading="lazy" width="1920" height="1200">
+            <div class="apparel-card-body">
+              <p class="apparel-card-cat">Apparel Design / Performance Wear</p>
+              <p class="apparel-card-name">StormFit Compression T-Shirt</p>
+              <span class="apparel-card-btn">View Live Product</span>
             </div>
           </a>
-          <a href="https://urbanbuck.pk/products/rova-cap-crop-top" target="_blank" rel="noopener" class="new-launch-card">
-            <img src="assets/urban-buck/new-launches/rova-cap-crop-top.jpg" alt="Rova Cap Crop Top" class="new-launch-card-img" loading="lazy">
-            <div class="new-launch-card-body">
-              <p class="new-launch-card-cat">Crop Tops</p>
-              <p class="new-launch-card-name">Rova Cap Crop Top</p>
-              <span class="new-launch-card-btn">View Live Listing</span>
+
+          <a href="https://urbanbuck.pk/collections/all-under-2000/products/rova-cap-crop-top-for-girls-gym-and-casual-wear" target="_blank" rel="noopener noreferrer" class="apparel-card">
+            <img src="assets/urban-buck/new-launches/rova-cap-crop-top.jpg" alt="Rova Cap Crop Top — Apparel Design infographic showing product details and colorways" class="apparel-card-img" loading="lazy" width="1920" height="1200">
+            <div class="apparel-card-body">
+              <p class="apparel-card-cat">Apparel Design / Women's Activewear</p>
+              <p class="apparel-card-name">Rova Cap Crop Top</p>
+              <span class="apparel-card-btn">View Live Product</span>
             </div>
           </a>
-          <a href="https://urbanbuck.pk/products/flex-tank-top" target="_blank" rel="noopener" class="new-launch-card">
-            <img src="assets/urban-buck/new-launches/flex-tank-top.jpg" alt="Flex Tank Top" class="new-launch-card-img" loading="lazy">
-            <div class="new-launch-card-body">
-              <p class="new-launch-card-cat">Tank Tops</p>
-              <p class="new-launch-card-name">Flex Tank Top</p>
-              <span class="new-launch-card-btn">View Live Listing</span>
+
+          <a href="https://urbanbuck.pk/collections/all-under-2000/products/flex-tank-top-for-women-breathable-workout-wear" target="_blank" rel="noopener noreferrer" class="apparel-card">
+            <img src="assets/urban-buck/new-launches/flex-tank-top.jpg" alt="Flex Tank Top — Apparel Design infographic showing product details and colorways" class="apparel-card-img" loading="lazy" width="1920" height="1200">
+            <div class="apparel-card-body">
+              <p class="apparel-card-cat">Apparel Design / Women's Workout Wear</p>
+              <p class="apparel-card-name">Flex Tank Top</p>
+              <span class="apparel-card-btn">View Live Product</span>
             </div>
           </a>
-          <a href="https://urbanbuck.pk/products/driftwood-sleeveless-hoodie" target="_blank" rel="noopener" class="new-launch-card">
-            <img src="assets/urban-buck/new-launches/drifthood-hoodie.jpg" alt="DriftHood Hoodie" class="new-launch-card-img" loading="lazy">
-            <div class="new-launch-card-body">
-              <p class="new-launch-card-cat">Hoodies</p>
-              <p class="new-launch-card-name">DriftHood Sleeveless Hoodie</p>
-              <span class="new-launch-card-btn">View Live Listing</span>
+
+          <a href="https://urbanbuck.pk/collections/all-under-2000/products/drifthood-sleeveless-hoodie-for-men" target="_blank" rel="noopener noreferrer" class="apparel-card">
+            <img src="assets/urban-buck/new-launches/drifthood-hoodie.jpg" alt="DriftHood Sleeveless Hoodie — Apparel Design infographic showing product details and colorways" class="apparel-card-img" loading="lazy" width="1920" height="1200">
+            <div class="apparel-card-body">
+              <p class="apparel-card-cat">Apparel Design / Men's Activewear</p>
+              <p class="apparel-card-name">DriftHood Sleeveless Hoodie</p>
+              <span class="apparel-card-btn">View Live Product</span>
             </div>
           </a>
-          <a href="https://urbanbuck.pk/products/coredrift-tank-top" target="_blank" rel="noopener" class="new-launch-card">
-            <img src="assets/urban-buck/new-launches/coredrift-tank-top.jpg" alt="CoreDrift Tank Top" class="new-launch-card-img" loading="lazy">
-            <div class="new-launch-card-body">
-              <p class="new-launch-card-cat">Tank Tops</p>
-              <p class="new-launch-card-name">CoreDrift Tank Top</p>
-              <span class="new-launch-card-btn">View Live Listing</span>
+
+          <a href="https://urbanbuck.pk/collections/all-under-2000/products/coredrift-tank-top-mens-sleeveless-gym-shirt" target="_blank" rel="noopener noreferrer" class="apparel-card">
+            <img src="assets/urban-buck/new-launches/coredrift-tank-top.jpg" alt="CoreDrift Tank Top — Apparel Design infographic showing product details and colorways" class="apparel-card-img" loading="lazy" width="1920" height="1200">
+            <div class="apparel-card-body">
+              <p class="apparel-card-cat">Apparel Design / Men's Gym Wear</p>
+              <p class="apparel-card-name">CoreDrift Tank Top</p>
+              <span class="apparel-card-btn">View Live Product</span>
             </div>
           </a>
+
         </div>
       </div>
     </div>
@@ -1156,30 +1169,6 @@
           }
         }
         window.slidePhoto = function(dir) { goPhoto(idx + dir); };
-      })();
-
-      // ---- New Launches Slider ----
-      (function() {
-        var track = document.getElementById('nlTrack');
-        var prevBtn = document.getElementById('nlPrev');
-        var nextBtn = document.getElementById('nlNext');
-        if (!track || !prevBtn || !nextBtn) return;
-        var scrollAmt = 240;
-
-        function updateBtns() {
-          prevBtn.disabled = track.scrollLeft <= 0;
-          nextBtn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
-        }
-        updateBtns();
-
-        prevBtn.addEventListener('click', function() {
-          track.scrollBy({ left: -scrollAmt, behavior: 'smooth' });
-        });
-        nextBtn.addEventListener('click', function() {
-          track.scrollBy({ left: scrollAmt, behavior: 'smooth' });
-        });
-        track.addEventListener('scroll', updateBtns);
-        window.addEventListener('resize', updateBtns);
       })();
     })();
   </script>
